@@ -1,7 +1,6 @@
 * {
   background-color: whitesmoke;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
 }
 
 .color-base {
@@ -16,6 +15,7 @@ a {
   text-decoration: none;
 }
 
+
 @media (max-width: 500px) {
   .navbar-list {
     display: flex;
@@ -29,13 +29,13 @@ a {
   text-align: center;
 }
 
-hero > h1 {
+#hero-section > h1 {
   padding-top: 15px;
   font-size: 3em;
   line-height: 1.5em;
 }
 
-hero p {
+#hero-section p {
   margin: auto;
   width: 80%;
   text-align: center;
@@ -119,7 +119,7 @@ hero p {
 }
 
 #rays {
-  color: #a5adba;
+  color: #A5ADBA;
   position: absolute;
   width: 547.58px;
   height: 599.77px;
