@@ -87,7 +87,10 @@ ul > li {
 }
 
 #section2-header {
+  margin: auto;
+  padding-top: 20px;
   font-size: 40px;
+  width: 70%;
   text-align: center;
 }
 
@@ -95,26 +98,26 @@ ul > li {
   margin: auto;
   display: block;
   width: 48px;
+  padding-top: 20px;
+  padding-bottom: 40px;
 }
 
 #portfolio {
   margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
   width: 327px;
   height: 474px;
-  background-color: #ebf0ee;
   border: 1px solid #d0d9d4;
   border-radius: 8px;
-  margin-top: 80px;
 }
 
 #portfolio-desc {
   margin: auto;
   width: 327px;
-  height: 252px;
+  height: 222px;
   background-color: white;
   border-radius: 8px;
-  border: 1px solid #D0D9D4
-  ;
 }
 
 #project-title {
