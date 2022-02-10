@@ -1,3 +1,159 @@
-.heading {
-  color: #2e8b57;
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Quicksand&display=swap");
+
+body {
+  background-color: #fff;
+  font-family: "Muli", sans-serif;
+  background-image: url("./images/icons/background.svg");
+  background-repeat: no-repeat;
+  background-position-y: 120px;
+  background-position-x: 25px;
+}
+
+.color-base {
+  color: #172b4d;
+}
+
+.color-contrast {
+  color: #36b37e;
+}
+
+.color-secondary {
+  color: #3a4a42;
+}
+
+#logo {
+  width: 80px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+@media (max-width: 500px) {
+  .navbar-list {
+    display: flex;
+    align-content: space-between;
+    justify-content: space-between;
+    padding: 20px;
+  }
+}
+
+#hero-section {
+  text-align: center;
+}
+
+#hero-section > h1 {
+  padding-top: 15px;
+  font-size: 3em;
+  line-height: 1.5em;
+}
+
+#hero-section p {
+  margin: auto;
+  width: 80%;
+  text-align: center;
+  font-size: medium;
+  line-height: 1.5em;
+}
+
+#social-links {
+  max-width: 50%;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  align-content: space-between;
+}
+
+#social-links > img {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  padding-top: 50px;
+  margin: auto;
+}
+
+ul > li {
+  list-style: none;
+  display: flex;
+  align-content: space-between;
+  padding: 10px;
+  padding-top: 50px;
+}
+
+#down-arrow {
+  padding-top: 20px;
+}
+
+#section2-header {
+  font-size: 40px;
+  text-align: center;
+}
+
+#indicator {
+  margin: auto;
+  display: block;
+  width: 48px;
+}
+
+#portfolio {
+  margin: auto;
+  width: 327px;
+  height: 474px;
+  background-color: #ebf0ee;
+  border: 1px solid #d0d9d4;
+  border-radius: 8px;
+  margin-top: 80px;
+}
+
+#portfolio-desc {
+  margin: auto;
+  width: 327px;
+  height: 252px;
+  background-color: white;
+  border-radius: 8px;
+  border: 1px solid #D0D9D4
+  ;
+}
+
+#project-title {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #3A4A42;
+  font-size: 24px;
+  text-align: center;
+}
+
+#tags {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 12px;
+  border: none;
+  justify-content: space-between;
+}
+
+#tag {
+  background-color: #ebf0ee;
+  border-radius: 4px;
+  padding: 8px, 12px, 8px, 12px;
+  border: none;
+  font-size: 12px;
+  height: 32px;
+}
+
+#see-project {
+  margin: auto;
+  margin-top: 25px;
+  position: relative;
+  align-content: center;
+  color: white;
+  background-color: #36b37f;
+  border-radius: 4px;
+  border: none;
+  width: 122px;
+  height: 48px;
+  left: calc(50% - 122px/2 + 0.5px);
+  bottom: 8px;
 }
