@@ -23,7 +23,7 @@ a {
     justify-content: space-between;
     padding: 20px;
   }
-
+}
 
 #hero-section {
   text-align: center;
@@ -126,5 +126,4 @@ hero p {
   left: -107.63px;
   top: 98.12px;
   z-index: -1;
-}
 }
