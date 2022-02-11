@@ -203,8 +203,7 @@ ul > li {
 
 .about_illus {
   background-image: 
-    url("./images/about_illus1.svg"),
-    url("./images/about_illus2.svg");
+    url("./images/a1.svg"), url("./images/a2.svg");
   background-position: right top;
   background-repeat: no-repeat, no-repeat;
 }
