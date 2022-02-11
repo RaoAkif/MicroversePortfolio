@@ -3,11 +3,15 @@
 
 body {
   background-color: #fff;
-  font-family: "Muli", sans-serif;
+  font-family: 'Roboto', sans-serif;
+  margin: 0px
+}
+
+#landing-section {
   background-image: url("./images/icons/background.svg");
   background-repeat: no-repeat;
   background-position-y: 120px;
-  background-position-x: 25px;
+  background-position-x: 15px;
 }
 
 .color-base {
@@ -16,6 +20,10 @@ body {
 
 .color-contrast {
   color: #36b37e;
+}
+
+.color-secondary {
+  color: #3a4a42;
 }
 
 #logo {
@@ -79,8 +87,138 @@ ul > li {
 }
 
 #down-arrow {
-  /* Dummy Code to place the icons */
-  font-size: 60px;
-  width: 50px;
-  color: red;
+  padding-top: 20px;
+}
+
+#section2-header {
+  margin: auto;
+  padding-top: 20px;
+  font-size: 40px;
+  width: 70%;
+  text-align: center;
+}
+
+#section3-header {
+  margin: auto;
+  padding-top: 20px;
+  font-size: 40px;
+  width: 70%;
+  text-align: center;
+}
+
+#indicator {
+  margin: auto;
+  display: block;
+  width: 48px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.portfolio {
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 327px;
+  height: 474px;
+  border: 1px solid #d0d9d4;
+  border-radius: 8px;
+}
+
+.portfolio-desc {
+  margin: auto;
+  width: 327px;
+  height: 222px;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.project-title {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #3a4a42;
+  font-size: 24px;
+  text-align: center;
+}
+
+.tags {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 12px;
+  border: none;
+  justify-content: space-between;
+}
+
+.tag {
+  background-color: #ebf0ee;
+  border-radius: 4px;
+  padding-left: 6px;
+  padding-right: 6px;
+  border: none;
+  font-size: 12px;
+  height: 32px;
+}
+
+.see-project {
+  margin: auto;
+  margin-top: 25px;
+  position: relative;
+  align-content: center;
+  color: white;
+  background-color: #36b37f;
+  border-radius: 4px;
+  border: none;
+  width: 122px;
+  height: 48px;
+  left: calc(50% - 122px / 2 + 0.5px);
+  bottom: 8px;
+}
+
+.about-section-details {
+  margin: auto;
+  margin-top: 20px;
+  width: 80%;
+  text-align: center;
+  line-height: 1.5em;
+  color: #42526e;
+  font-size: 20px;
+}
+
+.about_illus1 {
+  background-image: url("./images/icons/about_illus2.svg");
+  background-repeat: no-repeat;
+}
+
+.about-desc {
+  margin: auto;
+  margin-top: 50px;
+  height: 352px;
+  width: 327px;
+  border-radius: 8px;
+  background-color: #ebf0ee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-icon {
+  padding-top: 30px;
+}
+
+.about-desc-font {
+  font-size: 24px;
+  color: #344563;
+  padding-bottom: 20px;
+}
+
+.lists {
+  margin: 5px;
+  background-color: white;
+  color: #36b37e;
+  border-radius: 4px;
+  padding-left: 6px;
+  padding-right: 6px;
+  border: none;
+  font-size: 12px;
+  height: 40px;
 }
