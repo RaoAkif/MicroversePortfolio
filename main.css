@@ -27,12 +27,12 @@ body {
 }
 
 .button-states {
-  background: #36B37F;
+  background: #36b37f;
   border-radius: 4px;
 }
 
 .button-states:hover {
-  background: #36B37F;
+  background: #36b37f;
   box-shadow: 0px 8px 16px rgba(54, 179, 127, 0.24);
   border-radius: 4px;
 }
@@ -106,13 +106,18 @@ ul > li {
   padding-top: 20px;
 }
 
+#portfolio-section {
+  display: flex;
+  flex-direction: column;
+}
+
 .section-header {
   margin: auto;
   padding-top: 20px;
   font-size: 40px;
   width: 70%;
   text-align: center;
-  font-weight: bold;
+  font-weight: 800;
 }
 
 #indicator {
@@ -197,7 +202,8 @@ ul > li {
 }
 
 .about_illus {
-  background-image: url("./images/icons/about_illus1.svg"), url("./images/icons/about_illus2.svg");
+  background-image: url("./images/icons/about_illus1.svg"),
+    url("./images/icons/about_illus2.svg");
   background-position: right top;
   background-repeat: no-repeat, no-repeat;
 }
@@ -235,4 +241,47 @@ ul > .lists {
   border: none;
   font-size: 12px;
   margin: 3px;
+}
+
+#contact-message {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#contact-message > * {
+  align-items: center;
+  justify-content: space-between;
+}
+
+#email-text {
+  font-size: 20px;
+  color: #42526e;
+}
+
+#get-in-touch {
+  margin: 24px
+}
+
+.form-fields {
+  border: 1px solid #D0D9D4;
+  box-sizing: border-box;
+  border-radius: 4px;
+  height: 48px;
+  width: 327px;
+  margin: auto;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+#description {
+  border: 1px solid #D0D9D4;
+  box-sizing: border-box;
+  border-radius: 4px;
+  height: 114px;
+  width: 327px;
+  padding-top: 0
 }
