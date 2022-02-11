@@ -78,7 +78,7 @@ a {
   line-height: 1.5em;
 }
 
-#social-links {
+.social-links {
   max-width: 50%;
   margin: 0 auto;
   padding: 0;
@@ -86,7 +86,7 @@ a {
   align-content: space-between;
 }
 
-#social-links > img {
+.social-links > img {
   flex: 1;
   text-align: center;
   padding: 10px;
@@ -203,8 +203,8 @@ ul > li {
 
 .about_illus {
   background-image: 
-    url("./images/icons/about_illus1.svg"),
-    url("./images/icons/about_illus2.svg");
+    url("./images/about_illus1.svg"),
+    url("./images/about_illus2.svg");
   background-position: right top;
   background-repeat: no-repeat, no-repeat;
 }
