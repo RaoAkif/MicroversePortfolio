@@ -3,11 +3,15 @@
 
 body {
   background-color: #fff;
-  font-family: "Muli", sans-serif;
+  font-family: 'Roboto', sans-serif;
+  margin: 0px
+}
+
+#landing-section {
   background-image: url("./images/icons/background.svg");
   background-repeat: no-repeat;
   background-position-y: 120px;
-  background-position-x: 25px;
+  background-position-x: 15px;
 }
 
 .color-base {
