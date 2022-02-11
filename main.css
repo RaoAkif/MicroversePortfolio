@@ -94,6 +94,14 @@ ul > li {
   text-align: center;
 }
 
+#section3-header {
+  margin: auto;
+  padding-top: 20px;
+  font-size: 40px;
+  width: 70%;
+  text-align: center;
+}
+
 #indicator {
   margin: auto;
   display: block;
@@ -147,7 +155,7 @@ ul > li {
   height: 32px;
 }
 
-#see-project {
+.see-project {
   margin: auto;
   margin-top: 25px;
   position: relative;
@@ -162,7 +170,7 @@ ul > li {
   bottom: 8px;
 }
 
-#about-section-details {
+.about-section-details {
   margin: auto;
   margin-top: 20px;
   width: 80%;
@@ -177,7 +185,7 @@ ul > li {
   background-repeat: no-repeat;
 }
 
-#about-desc {
+.about-desc {
   margin: auto;
   margin-top: 50px;
   height: 352px;
@@ -189,17 +197,17 @@ ul > li {
   align-items: center;
 }
 
-#about-icon1 {
+.about-icon {
   padding-top: 30px;
 }
 
-#about-desc-font {
+.about-desc-font {
   font-size: 24px;
   color: #344563;
   padding-bottom: 20px;
 }
 
-#lists {
+.lists {
   margin: 5px;
   background-color: white;
   color: #36b37e;
