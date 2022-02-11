@@ -123,7 +123,7 @@ ul > li {
 #project-title {
   padding-top: 10px;
   padding-bottom: 10px;
-  color: #3A4A42;
+  color: #3a4a42;
   font-size: 24px;
   text-align: center;
 }
@@ -157,6 +157,61 @@ ul > li {
   border: none;
   width: 122px;
   height: 48px;
-  left: calc(50% - 122px/2 + 0.5px);
+  left: calc(50% - 122px / 2 + 0.5px);
   bottom: 8px;
 }
+
+section > p {
+  margin: auto;
+  margin-top: 20px;
+  width: 80%;
+  text-align: center;
+  font-size: medium;
+  line-height: 1.5em;
+  color: #42526e;
+  font-size: 20px;
+}
+
+.about_illus1 {
+  background-image: url("./images/icons/about_illus2.svg");
+  background-repeat: no-repeat;
+}
+
+#about-desc {
+  margin: auto;
+  margin-top: 50px;
+  height: 352px;
+  width: 327px;
+  border-radius: 8px;
+  background-color: #ebf0ee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+#about-icon1 {
+  padding-top: 30px;
+}
+
+#about-desc-font {
+  font-size: 24px;
+  color: #344563;
+  padding-bottom: 20px;
+}
+
+#lists {
+  margin: 5px;
+  background-color: white;
+  color: #36b37e;
+  border-radius: 4px;
+  padding: 8px, 12px, 8px, 12px;
+  border: none;
+  font-size: 12px;
+  height: 40px;
+}
+
+
+
+
+
