@@ -26,6 +26,22 @@ body {
   color: #3a4a42;
 }
 
+.button-states {
+  background: #36b37f;
+  border-radius: 4px;
+}
+
+.button-states:hover {
+  background: #36b37f;
+  box-shadow: 1px 8px 16px rgba(54, 179, 127, 0.24);
+  border-radius: 4px;
+}
+
+.button-states:focus {
+  background: #008552;
+  border-radius: 4px;
+}
+
 #logo {
   width: 80px;
 }
@@ -62,7 +78,7 @@ a {
   line-height: 1.5em;
 }
 
-#social-links {
+.social-links {
   max-width: 50%;
   margin: 0 auto;
   padding: 0;
@@ -70,7 +86,7 @@ a {
   align-content: space-between;
 }
 
-#social-links > img {
+.social-links > img {
   flex: 1;
   text-align: center;
   padding: 10px;
@@ -90,20 +106,18 @@ ul > li {
   padding-top: 20px;
 }
 
-#section2-header {
-  margin: auto;
-  padding-top: 20px;
-  font-size: 40px;
-  width: 70%;
-  text-align: center;
+#portfolio-section {
+  display: flex;
+  flex-direction: column;
 }
 
-#section3-header {
+.section-header {
   margin: auto;
   padding-top: 20px;
   font-size: 40px;
   width: 70%;
   text-align: center;
+  font-weight: 800;
 }
 
 #indicator {
@@ -115,6 +129,8 @@ ul > li {
 }
 
 .portfolio {
+  display: flex;
+  flex-direction: column;
   margin: auto;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -127,7 +143,6 @@ ul > li {
 .portfolio-desc {
   margin: auto;
   width: 327px;
-  height: 222px;
   background-color: white;
   border-radius: 8px;
 }
@@ -152,11 +167,13 @@ ul > li {
 .tag {
   background-color: #ebf0ee;
   border-radius: 4px;
-  padding-left: 6px;
-  padding-right: 6px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   border: none;
   font-size: 12px;
-  height: 32px;
+  justify-content: space-between;
 }
 
 .see-project {
@@ -184,9 +201,10 @@ ul > li {
   font-size: 20px;
 }
 
-.about_illus1 {
-  background-image: url("./images/icons/about_illus2.svg");
-  background-repeat: no-repeat;
+.about_illus {
+  background-image: url("./images/a1.svg"), url("./images/a2.svg");
+  background-position: right top;
+  background-repeat: no-repeat, no-repeat;
 }
 
 .about-desc {
@@ -211,14 +229,62 @@ ul > li {
   padding-bottom: 20px;
 }
 
-.lists {
-  margin: 5px;
+ul > .lists {
   background-color: white;
   color: #36b37e;
   border-radius: 4px;
-  padding-left: 6px;
-  padding-right: 6px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   border: none;
   font-size: 12px;
-  height: 40px;
+  margin: 3px;
+}
+
+#contact-message {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#contact-message > * {
+  align-items: center;
+  justify-content: space-between;
+}
+
+#email-text {
+  font-size: 20px;
+  color: #42526e;
+}
+
+#get-in-touch {
+  position: inherit;
+}
+
+.form-fields {
+  border: 1px solid #d0d9d4;
+  box-sizing: border-box;
+  border-radius: 4px;
+  height: 48px;
+  width: 327px;
+  margin: auto;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+#description {
+  border: 1px solid #d0d9d4;
+  box-sizing: border-box;
+  border-radius: 4px;
+  height: 114px;
+  width: 327px;
+  padding-top: 0;
+}
+
+#empty-footer {
+  height: 327px;
 }
