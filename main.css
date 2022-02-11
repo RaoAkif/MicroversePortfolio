@@ -202,8 +202,7 @@ ul > li {
 }
 
 .about_illus {
-  background-image: 
-    url("./images/a1.svg"), url("./images/a2.svg");
+  background-image: url("./images/a1.svg"), url("./images/a2.svg");
   background-position: right top;
   background-repeat: no-repeat, no-repeat;
 }
