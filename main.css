@@ -140,7 +140,7 @@ ul > li {
 #tag {
   background-color: #ebf0ee;
   border-radius: 4px;
-  padding: 8px, 12px, 8px, 12px;
+  padding: 8px, 12px;
   border: none;
   font-size: 12px;
   height: 32px;
@@ -161,12 +161,11 @@ ul > li {
   bottom: 8px;
 }
 
-section > p {
+#about-section-details {
   margin: auto;
   margin-top: 20px;
   width: 80%;
   text-align: center;
-  font-size: medium;
   line-height: 1.5em;
   color: #42526e;
   font-size: 20px;
@@ -204,7 +203,7 @@ section > p {
   background-color: white;
   color: #36b37e;
   border-radius: 4px;
-  padding: 8px, 12px, 8px, 12px;
+  padding: 8px, 12px;
   border: none;
   font-size: 12px;
   height: 40px;
