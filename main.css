@@ -3,8 +3,8 @@
 
 body {
   background-color: #fff;
-  font-family: 'Roboto', sans-serif;
-  margin: 0px
+  font-family: "Roboto", sans-serif;
+  margin: 1px;
 }
 
 #landing-section {
@@ -24,6 +24,22 @@ body {
 
 .color-secondary {
   color: #3a4a42;
+}
+
+.button-states {
+  background: #36B37F;
+  border-radius: 4px;
+}
+
+.button-states:hover {
+  background: #36B37F;
+  box-shadow: 0px 8px 16px rgba(54, 179, 127, 0.24);
+  border-radius: 4px;
+}
+
+.button-states:focus {
+  background: #008552;
+  border-radius: 4px;
 }
 
 #logo {
@@ -90,20 +106,13 @@ ul > li {
   padding-top: 20px;
 }
 
-#section2-header {
+.section-header {
   margin: auto;
   padding-top: 20px;
   font-size: 40px;
   width: 70%;
   text-align: center;
-}
-
-#section3-header {
-  margin: auto;
-  padding-top: 20px;
-  font-size: 40px;
-  width: 70%;
-  text-align: center;
+  font-weight: bold;
 }
 
 #indicator {
@@ -115,6 +124,8 @@ ul > li {
 }
 
 .portfolio {
+  display: flex;
+  flex-direction: column;
   margin: auto;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -127,7 +138,6 @@ ul > li {
 .portfolio-desc {
   margin: auto;
   width: 327px;
-  height: 222px;
   background-color: white;
   border-radius: 8px;
 }
@@ -152,11 +162,13 @@ ul > li {
 .tag {
   background-color: #ebf0ee;
   border-radius: 4px;
-  padding-left: 6px;
-  padding-right: 6px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   border: none;
   font-size: 12px;
-  height: 32px;
+  justify-content: space-between;
 }
 
 .see-project {
@@ -184,9 +196,10 @@ ul > li {
   font-size: 20px;
 }
 
-.about_illus1 {
-  background-image: url("./images/icons/about_illus2.svg");
-  background-repeat: no-repeat;
+.about_illus {
+  background-image: url("./images/icons/about_illus1.svg"), url("./images/icons/about_illus2.svg");
+  background-position: right top;
+  background-repeat: no-repeat, no-repeat;
 }
 
 .about-desc {
@@ -211,14 +224,15 @@ ul > li {
   padding-bottom: 20px;
 }
 
-.lists {
-  margin: 5px;
+ul > .lists {
   background-color: white;
   color: #36b37e;
   border-radius: 4px;
-  padding-left: 6px;
-  padding-right: 6px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   border: none;
   font-size: 12px;
-  height: 40px;
+  margin: 3px;
 }
