@@ -140,7 +140,8 @@ ul > li {
 #tag {
   background-color: #ebf0ee;
   border-radius: 4px;
-  padding: 8px, 12px;
+  padding-left: 6px;
+  padding-right: 6px;
   border: none;
   font-size: 12px;
   height: 32px;
@@ -203,7 +204,8 @@ ul > li {
   background-color: white;
   color: #36b37e;
   border-radius: 4px;
-  padding: 8px, 12px;
+  padding-left: 6px;
+  padding-right: 6px;
   border: none;
   font-size: 12px;
   height: 40px;
