@@ -10,7 +10,7 @@ body {
 #landing-section {
   background-image: url("./images/icons/background.svg");
   background-repeat: no-repeat;
-  background-position-y: 120px;
+  background-position-y: 100px;
   background-position-x: 15px;
 }
 
@@ -43,7 +43,7 @@ body {
 }
 
 #logo {
-  width: 80px;
+  width: 60px;
 }
 
 a {
@@ -51,13 +51,10 @@ a {
   text-decoration: none;
 }
 
-@media (max-width: 500px) {
-  .navbar-list {
-    display: flex;
-    align-content: space-between;
-    justify-content: space-between;
-    padding: 20px;
-  }
+.navbar-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
 }
 
 #hero-section {
@@ -78,7 +75,7 @@ a {
   line-height: 1.5em;
 }
 
-.social-links {
+#social-links {
   max-width: 50%;
   margin: 0 auto;
   padding: 0;
@@ -86,7 +83,7 @@ a {
   justify-content: space-around;
 }
 
-.social-links > * {
+#social-links > * {
   list-style: none;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -118,58 +115,57 @@ a {
   padding-bottom: 40px;
 }
 
+#portfolios {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  row-gap: 25px;
+}
+
 .portfolio {
   display: flex;
   flex-direction: column;
-  margin: auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  width: 327px;
-  height: 474px;
   border: 1px solid #d0d9d4;
   border-radius: 8px;
 }
 
 .portfolio-desc {
-  margin: auto;
-  width: 327px;
+  display: flex;
+  flex-direction: column;
   background-color: white;
   border-radius: 8px;
 }
 
 .project-title {
-  padding-top: 10px;
-  padding-bottom: 10px;
   color: #3a4a42;
   font-size: 24px;
   text-align: center;
+  margin-top: 20px;
+  margin-bottom: 15px;
 }
 
 .tags {
+  margin: 0px;
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
-  padding: 8px 12px;
-  border: none;
-  justify-content: space-between;
+  justify-content: center;
+  padding: 0px;
 }
 
 .tag {
   background-color: #ebf0ee;
   border-radius: 4px;
-  padding-left: 12px;
-  padding-right: 12px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  border: none;
+  padding: 8px 12px;
   font-size: 12px;
-  justify-content: space-between;
+  list-style: none;
+  margin: 5px;
 }
 
-.see-project {
+.primary-button {
   margin: auto;
-  margin-top: 25px;
-  position: relative;
+  margin-top: 15px;
+  margin-bottom: 15px;
   align-content: center;
   color: white;
   background-color: #36b37f;
@@ -177,8 +173,12 @@ a {
   border: none;
   width: 122px;
   height: 48px;
-  left: calc(50% - 122px / 2 + 0.5px);
-  bottom: 8px;
+}
+
+#get-resume {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .about-section-details {
@@ -219,31 +219,30 @@ a {
   padding-bottom: 20px;
 }
 
-ul > .lists {
+.about-section-detail {
+  margin: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px;
+}
+
+.about-section-detail > .lists {
   background-color: white;
   color: #36b37e;
   border-radius: 4px;
-  padding-left: 12px;
-  padding-right: 12px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  border: none;
+  padding: 8px 12px;
   font-size: 12px;
-  margin: 3px;
+  list-style: none;
+  margin: 5px;
 }
 
 #contact-message {
+  display: flex;
+  flex-direction: column;
   font-weight: bold;
   font-size: 40px;
   line-height: 52px;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-}
-
-#contact-message > * {
-  align-items: center;
-  justify-content: space-between;
 }
 
 #email-text {
@@ -277,4 +276,29 @@ ul > .lists {
 
 #empty-footer {
   height: 327px;
+}
+
+#social-links2 {
+  width: 60%;
+  margin: auto;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+#social-links2 > * {
+  list-style: none;
+}
+
+#contact-message {
+  background-image: url("./images/icons/illus-contact.svg");
+  background-repeat: no-repeat;
+  background-position-y: 744px;
+  background-position-x: 336px;
+}
+
+#indicator_last {
+  margin: auto;
+  display: block;
+  padding-bottom: 5px;
 }
