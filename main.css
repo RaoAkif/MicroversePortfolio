@@ -83,23 +83,13 @@ a {
   margin: 0 auto;
   padding: 0;
   display: flex;
-  align-content: space-between;
+  justify-content: space-around;
 }
 
-.social-links > img {
-  flex: 1;
-  text-align: center;
-  padding: 10px;
-  padding-top: 50px;
-  margin: auto;
-}
-
-ul > li {
+.social-links > * {
   list-style: none;
-  display: flex;
-  align-content: space-between;
-  padding: 10px;
   padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 #down-arrow {
