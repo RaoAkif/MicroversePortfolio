@@ -57,9 +57,10 @@ a {
   padding: 20px;
 }
 
-#hero-section {
+.text-center {
   text-align: center;
 }
+
 
 #hero-section > h1 {
   padding-top: 15px;
