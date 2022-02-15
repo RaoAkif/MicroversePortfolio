@@ -74,10 +74,11 @@ a {
   text-align: center;
   font-size: medium;
   line-height: 1.5em;
+  padding-bottom: 50px;
 }
 
 #social-links {
-  max-width: 50%;
+  width: 50%;
   margin: 0 auto;
   padding: 0;
   display: flex;
@@ -86,12 +87,10 @@ a {
 
 #social-links > * {
   list-style: none;
-  padding-top: 50px;
-  padding-bottom: 50px;
 }
 
 #down-arrow {
-  padding-top: 20px;
+  padding-top: 70px;
 }
 
 #portfolio-section {
@@ -246,6 +245,12 @@ a {
   text-align: center;
 }
 
+form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
 #email-text {
   font-size: 20px;
   color: #42526e;
@@ -253,7 +258,7 @@ a {
 
 #get-in-touch {
   position: inherit;
-}
+ }
 
 .form-fields {
   border: 1px solid #d0d9d4;
@@ -267,7 +272,7 @@ a {
 }
 
 #description {
-  border: 1px solid #d0d9d4;
+  border: 1px solid #60C095;
   box-sizing: border-box;
   border-radius: 4px;
   height: 114px;
@@ -278,18 +283,6 @@ a {
 
 #empty-footer {
   height: 327px;
-}
-
-#social-links2 {
-  width: 60%;
-  margin: auto;
-  padding: 0;
-  display: flex;
-  justify-content: space-around;
-}
-
-#social-links2 > * {
-  list-style: none;
 }
 
 #contact-message {

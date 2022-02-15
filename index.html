@@ -214,12 +214,12 @@
         chat please get in touch.
       </h1>
       <form action="https://formspree.io/f/mrgjqpap" method="POST">
-        <input class="form-fields" type="text" name="Full Name" id="name" placeholder="Full Name">
-        <input class="form-fields" type="email" name="Email Address" id="email-address" placeholder="Email Address">
-        <textarea class="form-fields" type="text" name="Subject" id="description" placeholder="Describe you subject here..."></textarea>
+        <input class="form-fields" type="text" name="Name" id="name" placeholder="Full Name"  required>
+        <input class="form-fields" type="email" name="Email Address" id="email-address" placeholder="Email Address" required>
+        <textarea class="form-fields" type="text" name="Subject" id="description" placeholder="Describe you subject here..." maxlength="500" required></textarea> <br>
         <button type="submit" id="get-in-touch" class="primary-button button-states">Get in touch</button>
       </form>
-      <ul id="social-links2">
+      <ul id="social-links">
         <li>
           <a href="github.com/raoakif">
             <img src="./images/icons/github.svg" alt="github-icon"
