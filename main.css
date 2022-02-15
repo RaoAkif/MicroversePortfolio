@@ -247,6 +247,7 @@ a {
 
 form {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
 }
@@ -266,9 +267,10 @@ form {
   border-radius: 4px;
   height: 48px;
   width: 327px;
-  margin: auto;
-  margin-top: 20px;
   padding: 10px;
+  margin: auto;
+  margin-top: 12px;
+  margin-bottom: 12px;
 }
 
 #description {
