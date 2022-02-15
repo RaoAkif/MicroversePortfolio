@@ -76,7 +76,7 @@ a {
   padding-bottom: 50px;
 }
 
-#social-links {
+.social-links {
   width: 50%;
   margin: 0 auto;
   padding: 0;
@@ -84,7 +84,7 @@ a {
   justify-content: space-around;
 }
 
-#social-links > * {
+.social-links > * {
   list-style: none;
 }
 
