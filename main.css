@@ -114,7 +114,7 @@ a {
 }
 
 #portfolios {
-  width: 90%;
+  width: 88.1%;
   margin: auto;
   display: grid;
   row-gap: 25px;
@@ -179,10 +179,14 @@ a {
   justify-content: center;
 }
 
+#about-section {
+  padding-top: 48px;
+}
+
 .about-section-details {
   margin: auto;
   margin-top: 20px;
-  width: 80%;
+  width: 77.6%;
   text-align: center;
   line-height: 1.5em;
   color: #42526e;
@@ -193,13 +197,14 @@ a {
   background-image: url("./images/a1.svg"), url("./images/a2.svg");
   background-position: right top;
   background-repeat: no-repeat, no-repeat;
+  background-position-y: 15px;
 }
 
 .about-desc {
   margin: auto;
   margin-top: 50px;
   height: 352px;
-  width: 327px;
+  width: 88.1%;
   border-radius: 8px;
   background-color: #ebf0ee;
   display: flex;
