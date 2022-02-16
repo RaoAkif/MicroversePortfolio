@@ -27,12 +27,12 @@
             <span class="color-base">Hey there. I'm Rao Akif. </span><br />
             <span class="color-contrast">I'm a software developer</span>
           </h1>
-          <p>
+          <p class="text-align">
             I can help you build a product , feature or website Look through
             some of my work and experience! If you like what you see and have a
             project you need coded, don't hestiate to contact me.
           </p>
-          <ul id="social-links">
+          <ul class="social-links">
             <li>
               <a href="github.com/raoakif">
                 <img src="./images/icons/github.svg" alt="github-icon"
@@ -68,7 +68,7 @@
       </section>
     </main>
     <section id="portfolio-section">
-      <h1 class="color-base section-header">My Recent Works</h1>
+      <h2 class="color-base section-header">My Recent Works</h2>
       <img
         id="indicator"
         src="./images/icons/Indicator.svg"
@@ -78,7 +78,7 @@
         <div class="portfolio">
           <img src="./images/portfolio/portfolio_1.png" alt="portfolio_1" />
           <div class="portfolio-desc">
-            <h1 class="project-title">Intelligenta Collaboratora</h1>
+            <h2 class="project-title">Intelligenta Collaboratora</h2>
             <ul class="tags">
               <li class="tag">RubyOnRails</li>
               <li class="tag">HTML</li>
@@ -95,7 +95,7 @@
         <div class="portfolio">
           <img src="./images/portfolio/portfolio_1.png" alt="portfolio_1" />
           <div class="portfolio-desc">
-            <h1 class="project-title">Intelligenta Collaboratora</h1>
+            <h2 class="project-title">Intelligenta Collaboratora</h2>
             <ul class="tags">
               <li class="tag">RubyOnRails</li>
               <li class="tag">HTML</li>
@@ -110,7 +110,7 @@
         <div class="portfolio">
           <img src="./images/portfolio/portfolio_1.png" alt="portfolio_1" />
           <div class="portfolio-desc">
-            <h1 class="project-title">Intelligenta Collaboratora</h1>
+            <h2 class="project-title">Intelligenta Collaboratora</h2>
             <ul class="tags">
               <li class="tag">RubyOnRails</li>
               <li class="tag">HTML</li>
@@ -125,7 +125,7 @@
         <div class="portfolio">
           <img src="./images/portfolio/portfolio_1.png" alt="portfolio_1" />
           <div class="portfolio-desc">
-            <h1 class="project-title">Intelligenta Collaboratora</h1>
+            <h2 class="project-title">Intelligenta Collaboratora</h2>
             <ul class="tags">
               <li class="tag">RubyOnRails</li>
               <li class="tag">HTML</li>
@@ -140,7 +140,7 @@
         <div class="portfolio">
           <img src="./images/portfolio/portfolio_1.png" alt="portfolio_1" />
           <div class="portfolio-desc">
-            <h1 class="project-title">Intelligenta Collaboratora</h1>
+            <h2 class="project-title">Intelligenta Collaboratora</h2>
             <ul class="tags">
               <li class="tag">RubyOnRails</li>
               <li class="tag">HTML</li>
@@ -155,7 +155,7 @@
       </div>
     </section>
     <section class="about_illus" id="about-section">
-      <h1 class="color-base section-header">About me</h1>
+      <h2 class="color-base section-header">About me</h2>
       <p class="about-section-details">
         I can help you build a product , feature or website Look through some of
         my work and experience! If you like what you see and have a project you
@@ -208,18 +208,18 @@
         </ul>
       </div>
     </section>
-    <section id="contact-message">
-      <h1 class="color-base  section-header">
+    <footer id="contact-message">
+      <h2 class="color-base  section-header">
         I'm always interested in hearing about new projects, so if you'd like to
         chat please get in touch.
-      </h1>
-      <input class="form-fields" type="text" id="name" placeholder="Full Name">
-      <input class="form-fields" type="email" id="email-address" placeholder="Email Address">
-      <textarea class="form-fields" type="text" id="description" placeholder="Describe you subject here..."></textarea>
-      <button type="button" id="get-in-touch" class="primary-button button-states">
-        Get in touch
-      </button>
-      <ul id="social-links2">
+      </h2>
+      <form action="https://formspree.io/f/mrgjqpap" method="POST">
+        <input class="form-fields" type="text" name="Name" id="name" maxlength="30" placeholder="Full Name"  required>
+        <input class="form-fields" type="email" name="Email Address" id="email-address" placeholder="Email Address" required>
+        <textarea class="form-fields" name="Subject" id="description" maxlength="500" required>Describe you subject here...</textarea>
+        <button type="submit" id="get-in-touch" class="primary-button button-states">Get in touch</button>
+      </form>
+      <ul class="social-links">
         <li>
           <a href="github.com/raoakif">
             <img src="./images/icons/github.svg" alt="github-icon"
@@ -253,6 +253,6 @@
         src="./images/icons/Indicator_last.svg"
         alt="Indicator line"
       />
-    </section>
+    </footer>
   </body>
 </html>

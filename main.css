@@ -61,7 +61,6 @@ a {
   text-align: center;
 }
 
-
 #hero-section > h1 {
   padding-top: 15px;
   font-size: 3em;
@@ -71,27 +70,25 @@ a {
 #hero-section p {
   margin: auto;
   width: 80%;
-  text-align: center;
   font-size: medium;
   line-height: 1.5em;
+  padding-bottom: 50px;
 }
 
-#social-links {
-  max-width: 50%;
+.social-links {
+  width: 50%;
   margin: 0 auto;
   padding: 0;
   display: flex;
   justify-content: space-around;
 }
 
-#social-links > * {
+.social-links > * {
   list-style: none;
-  padding-top: 50px;
-  padding-bottom: 50px;
 }
 
 #down-arrow {
-  padding-top: 20px;
+  padding-top: 70px;
 }
 
 #portfolio-section {
@@ -146,12 +143,12 @@ a {
 }
 
 .tags {
-  margin: 0px;
+  margin: 1px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  padding: 0px;
+  padding: 1px;
 }
 
 .tag {
@@ -221,10 +218,10 @@ a {
 }
 
 .about-section-detail {
-  margin: 0px;
+  margin: 1px;
   display: flex;
   flex-wrap: wrap;
-  padding: 0px;
+  padding: 1px;
 }
 
 .about-section-detail > .lists {
@@ -238,12 +235,23 @@ a {
 }
 
 #contact-message {
+  background-image: url("./images/icons/illus-contact.svg");
+  background-repeat: no-repeat;
+  background-position-y: 744px;
+  background-position-x: 336px;
   display: flex;
   flex-direction: column;
   font-weight: bold;
   font-size: 40px;
   line-height: 52px;
   text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 #email-text {
@@ -261,13 +269,14 @@ a {
   border-radius: 4px;
   height: 48px;
   width: 327px;
-  margin: auto;
-  margin-top: 20px;
   padding: 10px;
+  margin: auto;
+  margin-top: 12px;
+  margin-bottom: 12px;
 }
 
 #description {
-  border: 1px solid #d0d9d4;
+  border: 1px solid #60c095;
   box-sizing: border-box;
   border-radius: 4px;
   height: 114px;
@@ -278,25 +287,6 @@ a {
 
 #empty-footer {
   height: 327px;
-}
-
-#social-links2 {
-  width: 60%;
-  margin: auto;
-  padding: 0;
-  display: flex;
-  justify-content: space-around;
-}
-
-#social-links2 > * {
-  list-style: none;
-}
-
-#contact-message {
-  background-image: url("./images/icons/illus-contact.svg");
-  background-repeat: no-repeat;
-  background-position-y: 744px;
-  background-position-x: 336px;
 }
 
 #indicator_last {
