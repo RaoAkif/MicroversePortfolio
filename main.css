@@ -57,7 +57,7 @@ body {
   font-style: normal;
   font-weight: 600;
   line-height: 28px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: center;
   color: #36b37f;
 }
@@ -109,15 +109,6 @@ a {
   padding-top: 15px;
   font-size: 3em;
   line-height: 1.5em;
-}
-
-#hero-section p {
-  margin: auto;
-  width: 60%;
-  font-size: medium;
-  line-height: 1.5em;
-  padding-bottom: 50px;
-  color: #172b4d;
 }
 
 @media (min-width: 700px) {
@@ -195,12 +186,6 @@ a {
   margin: auto;
   width: 48px;
   padding-top: 20px;
-}
-
-@media (min-width: 700px) {
-  #indicator {
-    display: none;
-  }
 }
 
 #my-recent-works-header {
