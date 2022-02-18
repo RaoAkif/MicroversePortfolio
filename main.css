@@ -8,10 +8,20 @@ body {
 }
 
 #landing-section {
-  background-image: url("./images/icons/background.svg");
+  background-image: url("./images/bg/background.svg");
   background-repeat: no-repeat;
-  background-position-y: 100px;
-  background-position-x: 15px;
+  background-position-y: -3px;
+  background-position-x: 11px;
+  background-size: cover;
+}
+
+@media (min-width: 700px) {
+  #landing-section {
+    background-image: url("./images/bg/Header-llustration-desktop.svg");
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 152vh;
+  }
 }
 
 .color-base {
@@ -43,7 +53,13 @@ body {
 }
 
 #logo {
-  width: 60px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #36b37f;
 }
 
 a {
@@ -55,6 +71,34 @@ a {
   display: flex;
   justify-content: space-between;
   padding: 20px;
+}
+
+@media (min-width: 700px) {
+  .navbar-list {
+    display: none;
+  }
+}
+
+.navbar-list-desktop {
+  list-style: none;
+  font-size: 15px;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 26px;
+  padding-left: 16px;
+  width: 250px;
+  margin: auto;
+}
+
+@media (max-width: 700px) {
+  .navbar-list-desktop {
+    display: none;
+  }
+}
+
+.navbar-list-desktop > li > a {
+  color: #344563;
 }
 
 .text-center {
@@ -69,10 +113,26 @@ a {
 
 #hero-section p {
   margin: auto;
-  width: 80%;
+  width: 60%;
   font-size: medium;
   line-height: 1.5em;
   padding-bottom: 50px;
+  color: #172b4d;
+}
+
+@media (min-width: 700px) {
+  #hero-section {
+    padding-top: 175px;
+  }
+}
+
+#hero-section p {
+  margin: auto;
+  width: 60%;
+  font-size: medium;
+  line-height: 1.5em;
+  padding-bottom: 50px;
+  color: #172b4d;
 }
 
 .social-links {
@@ -85,6 +145,12 @@ a {
 
 .social-links > * {
   list-style: none;
+}
+
+@media (min-width: 700px) {
+  #hero-section .social-links {
+    width: 15%;
+  }
 }
 
 #down-arrow {
@@ -113,6 +179,40 @@ a {
   padding-bottom: 40px;
 }
 
+#indicator_last-Desktop {
+  display: none;
+}
+
+@media (min-width: 700px) {
+  #indicator_last-Desktop {
+    display: block;
+    padding-bottom: 40px;
+  }
+}
+
+#indicator {
+  display: block;
+  margin: auto;
+  width: 48px;
+  padding-top: 20px;
+}
+
+@media (min-width: 700px) {
+  #indicator {
+    display: none;
+  }
+}
+
+#my-recent-works-header {
+  margin-bottom: 48px;
+}
+
+@media (min-width: 700px) {
+  #email-text {
+    display: none;
+  }
+}
+
 #portfolios {
   width: 88.1%;
   margin: auto;
@@ -120,11 +220,25 @@ a {
   row-gap: 25px;
 }
 
+@media (min-width: 700px) {
+  #portfolios {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 900px) {
+  #portfolios {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
 .portfolio {
   display: flex;
   flex-direction: column;
   border: 1px solid #d0d9d4;
   border-radius: 8px;
+  margin-right: 12px;
+  margin-left: 12px;
 }
 
 .portfolio-desc {
@@ -185,7 +299,6 @@ a {
 
 .about-section-details {
   margin: auto;
-  margin-top: 20px;
   width: 77.6%;
   text-align: center;
   line-height: 1.5em;
@@ -193,8 +306,14 @@ a {
   font-size: 20px;
 }
 
+@media (min-width: 700px) {
+  .about-section-details {
+    width: 50%;
+  }
+}
+
 .about_illus {
-  background-image: url("./images/a1.svg"), url("./images/a2.svg");
+  background-image: url("./images/bg/a1.svg"), url("./images/bg/a2.svg");
   background-position: right top;
   background-repeat: no-repeat, no-repeat;
   background-position-y: 15px;
@@ -202,7 +321,6 @@ a {
 
 .about-desc {
   margin: auto;
-  margin-top: 50px;
   height: 352px;
   width: 88.1%;
   border-radius: 8px;
@@ -210,6 +328,26 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+#about-cards {
+  width: 88.1%;
+  margin: auto;
+  display: grid;
+  row-gap: 25px;
+  margin-top: 50px;
+}
+
+@media (min-width: 700px) {
+  #about-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 900px) {
+  #about-cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .about-icon {
@@ -242,26 +380,37 @@ a {
 #contact-message {
   background-image: url("./images/icons/illus-contact.svg");
   background-repeat: no-repeat;
-  background-position-y: 744px;
-  background-position-x: 336px;
+  background-position-y: 879px;
+  background-position-x: 260px;
+  width: 81.25%;
+  margin: auto;
+}
+
+footer {
   display: flex;
-  flex-direction: column;
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 52px;
-  text-align: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-self: flex-start;
 }
 
 form {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
+  width: 327px;
+  flex: grid;
+}
+
+@media (min-width: 992px) {
+  form {
+    width: 654px;
+  }
 }
 
 #email-text {
   font-size: 20px;
   color: #42526e;
+  text-align: center;
 }
 
 #get-in-touch {
@@ -273,11 +422,9 @@ form {
   box-sizing: border-box;
   border-radius: 4px;
   height: 48px;
-  width: 327px;
+  width: 303px;
   padding: 10px;
-  margin: auto;
-  margin-top: 12px;
-  margin-bottom: 12px;
+  margin: 12px;
 }
 
 #description {
@@ -285,7 +432,7 @@ form {
   box-sizing: border-box;
   border-radius: 4px;
   height: 114px;
-  width: 327px;
+  width: 654px;
   padding-top: 12px;
   font-family: "Roboto", sans-serif;
 }
@@ -294,8 +441,86 @@ form {
   height: 327px;
 }
 
+@media (min-width: 700px) {
+  #empty-footer {
+    display: none;
+  }
+}
+
 #indicator_last {
   margin: auto;
   display: block;
   padding-bottom: 5px;
+}
+
+#footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 164px;
+}
+
+#footer-top > * {
+  align-self: baseline;
+}
+
+#footer-text {
+  font-size: 40px;
+  line-height: 52px;
+  font-size: 40px;
+  text-align: center;
+}
+
+@media (min-width: 700px) {
+  #footer-text {
+    font-size: 30px;
+    line-height: 52px;
+    font-size: 40px;
+    text-align: center;
+    width: 90%;
+  }
+}
+
+@media (min-width: 700px) {
+  #footer-top {
+    flex-wrap: nowrap;
+  }
+  #footer-text {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 900px) {
+  #footer-top {
+    flex-wrap: nowrap;
+    text-align: left;
+  }
+  #footer-text {
+    font-size: 30px;
+    text-align: left;
+  }
+}
+
+#footer-middile {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  border: none;
+}
+
+@media (min-width: 700px) {
+  #footer-middile {
+    border-top: 1px solid grey;
+    width: 1500px;
+    margin-top: 20%;
+  }
+}
+
+#footer-middile > * {
+  justify-content: center;
+  padding: 20px;
+}
+
+#footer-middile > .social-links > li {
+  margin-left: 10px;
+  margin-right: 10px;
 }
