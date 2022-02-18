@@ -162,14 +162,6 @@ a {
   font-weight: 800;
 }
 
-#indicator {
-  margin: auto;
-  display: block;
-  width: 48px;
-  padding-top: 20px;
-  padding-bottom: 40px;
-}
-
 #indicator_last-Desktop {
   display: none;
 }
@@ -186,6 +178,12 @@ a {
   margin: auto;
   width: 48px;
   padding-top: 20px;
+}
+
+@media (min-width: 700px) {
+  #indicator {
+    display: none;
+  }
 }
 
 #my-recent-works-header {
@@ -383,7 +381,6 @@ form {
   flex-direction: row;
   flex-wrap: wrap;
   width: 327px;
-  flex: grid;
 }
 
 @media (min-width: 992px) {
@@ -449,7 +446,6 @@ form {
 }
 
 #footer-text {
-  font-size: 40px;
   line-height: 52px;
   font-size: 40px;
   text-align: center;
@@ -469,6 +465,7 @@ form {
   #footer-top {
     flex-wrap: nowrap;
   }
+
   #footer-text {
     font-size: 30px;
   }
@@ -479,6 +476,7 @@ form {
     flex-wrap: nowrap;
     text-align: left;
   }
+  
   #footer-text {
     font-size: 30px;
     text-align: left;
