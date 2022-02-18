@@ -453,7 +453,6 @@ form {
 
 @media (min-width: 700px) {
   #footer-text {
-    font-size: 30px;
     line-height: 52px;
     font-size: 40px;
     text-align: center;
@@ -462,23 +461,14 @@ form {
 }
 
 @media (min-width: 700px) {
-  #footer-top {
-    flex-wrap: nowrap;
-  }
-
   #footer-text {
     font-size: 30px;
   }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 700px) {
   #footer-top {
     flex-wrap: nowrap;
-    text-align: left;
-  }
-  
-  #footer-text {
-    font-size: 30px;
     text-align: left;
   }
 }
