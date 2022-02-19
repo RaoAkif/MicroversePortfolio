@@ -17,7 +17,7 @@ body {
   #landing-section {
     background-image: url("./images/bg/head-desk1.svg");
     background-repeat: no-repeat;
-    background-position: 0px 94%;
+    background-position: 0 94%;
     height: 147vh;
   }
 }
@@ -364,11 +364,10 @@ a {
 
 @media (min-width: 990px) {
   #contact-message {
-    background-image: url("./images/bg/illusContdesk1.svg"), 
-    url("./images/bg/illusContdesk2.svg"), 
-    url("./images/bg/illusContdesk3.svg");
+    background-image: url("./images/bg/condes1.svg"),
+      url("./images/bg/condes2.svg"), url("./images/bg/condes3.svg");
     background-repeat: no-repeat;
-    background-position: 0px 82%, 29% 75%, 100% 82%;
+    background-position: 0 82%, 29% 75%, 100% 82%;
   }
 }
 
@@ -467,7 +466,6 @@ form {
   #footer-text {
     line-height: 52px;
     text-align: justify;
-    width: 34%;
     padding-bottom: 63px;
     width: 30%;
   }
