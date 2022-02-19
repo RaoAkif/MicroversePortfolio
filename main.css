@@ -10,17 +10,15 @@ body {
 #landing-section {
   background-image: url("./images/bg/background.svg");
   background-repeat: no-repeat;
-  background-position-y: -3px;
-  background-position-x: 11px;
-  background-size: cover;
+  background-position: 16px 60px;
 }
 
 @media (min-width: 990px) {
   #landing-section {
-    background-image: url("./images/bg/Header-llustration-desktop.svg");
+    background-image: url("./images/bg/head-desk1.svg");
     background-repeat: no-repeat;
-    width: 100vw;
-    height: 152vh;
+    background-position: 0px 94%;
+    height: 147vh;
   }
 }
 
@@ -122,7 +120,7 @@ a {
   width: 60%;
   font-size: medium;
   line-height: 1.5em;
-  padding-bottom: 50px;
+  padding-bottom: 25px;
   color: #172b4d;
 }
 
@@ -145,7 +143,7 @@ a {
 }
 
 #down-arrow {
-  padding-top: 70px;
+  padding-top: 50px;
 }
 
 #portfolio-section {
@@ -296,9 +294,8 @@ a {
 
 .about_illus {
   background-image: url("./images/bg/a1.svg"), url("./images/bg/a2.svg");
-  background-position: right top, left top;
-  background-repeat: no-repeat, no-repeat;
-  background-position-y: 15px;
+  background-repeat: no-repeat;
+  background-position: 1520px 5%, 0% -40%;
 }
 
 .about-desc {
@@ -359,35 +356,27 @@ a {
   margin: 5px;
 }
 
-/* #contact-message {
+#contact-message {
   background-image: url("./images/icons/illus-contact.svg");
   background-repeat: no-repeat;
-  background-position-y: 879px;
-  background-position-x: 260px;
-} */
+  background-position: 335px 61%;
+}
 
-/* @media (min-width: 900px) {
+@media (min-width: 990px) {
   #contact-message {
-    background: url(./images/bg/illusContact.png) center no-repeat;
-    background-position-y: 340px;
-    background-position-x: 100px;
-  }
-} */
-
-/* @media (min-width: 900px) {
-  .about_illus {
-    background-image: url("./images/bg/illusContdesk1.svg");
+    background-image: url("./images/bg/illusContdesk1.svg"), 
+    url("./images/bg/illusContdesk2.svg"), 
+    url("./images/bg/illusContdesk3.svg");
     background-repeat: no-repeat;
-    background-position-y: 879px;
-    background-position-x: 260px;
+    background-position: 0px 82%, 29% 75%, 100% 82%;
   }
-} */
+}
 
 footer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-self: flex-start;
+  justify-content: space-around;
 }
 
 form {
@@ -451,27 +440,36 @@ form {
 }
 
 #footer-top {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 164px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
 }
 
-#footer-top > * {
-  align-self: center;
+@media (min-width: 990px) {
+  #footer-top {
+    padding-top: 160px;
+    width: 85%;
+    display: flex;
+    margin: auto;
+  }
 }
 
 #footer-text {
   line-height: 52px;
   font-size: 40px;
   text-align: center;
+  width: 90%;
+  margin: auto;
+  padding-top: 60px;
 }
 
 @media (min-width: 990px) {
   #footer-text {
     line-height: 52px;
-    font-size: 40px;
-    text-align: center;
-    width: 90%;
+    text-align: justify;
+    width: 34%;
+    padding-bottom: 63px;
+    width: 30%;
   }
 }
 
@@ -484,7 +482,8 @@ form {
 @media (min-width: 990px) {
   #footer-top {
     flex-wrap: nowrap;
-    text-align: left;
+    text-align: justify;
+    justify-content: space-around;
   }
 }
 
