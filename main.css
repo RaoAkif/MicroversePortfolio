@@ -15,7 +15,7 @@ body {
   background-size: cover;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 990px) {
   #landing-section {
     background-image: url("./images/bg/Header-llustration-desktop.svg");
     background-repeat: no-repeat;
@@ -73,7 +73,7 @@ a {
   padding: 20px;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 990px) {
   .navbar-list {
     display: none;
   }
@@ -91,7 +91,7 @@ a {
   margin: auto;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 990px) {
   .navbar-list-desktop {
     display: none;
   }
@@ -111,7 +111,7 @@ a {
   line-height: 1.5em;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 990px) {
   #hero-section {
     padding-top: 175px;
   }
@@ -138,7 +138,7 @@ a {
   list-style: none;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 990px) {
   #hero-section .social-links {
     width: 15%;
   }
@@ -166,7 +166,7 @@ a {
   display: none;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 990px) {
   #indicator_last-Desktop {
     display: block;
     padding-bottom: 40px;
@@ -180,7 +180,7 @@ a {
   padding-top: 20px;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 990px) {
   #indicator {
     display: none;
   }
@@ -190,7 +190,7 @@ a {
   margin-bottom: 48px;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 990px) {
   #email-text {
     display: none;
   }
@@ -200,10 +200,11 @@ a {
   width: 88.1%;
   margin: auto;
   display: grid;
-  row-gap: 25px;
+  row-gap: 15px;
+  column-gap: 15px;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 990px) {
   #portfolios {
     grid-template-columns: 1fr 1fr;
   }
@@ -220,8 +221,6 @@ a {
   flex-direction: column;
   border: 1px solid #d0d9d4;
   border-radius: 8px;
-  margin-right: 12px;
-  margin-left: 12px;
 }
 
 .portfolio-desc {
@@ -289,7 +288,7 @@ a {
   font-size: 20px;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 990px) {
   .about-section-details {
     width: 50%;
   }
@@ -297,7 +296,7 @@ a {
 
 .about_illus {
   background-image: url("./images/bg/a1.svg"), url("./images/bg/a2.svg");
-  background-position: right top;
+  background-position: right top, left top;
   background-repeat: no-repeat, no-repeat;
   background-position-y: 15px;
 }
@@ -321,7 +320,7 @@ a {
   margin-top: 50px;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 990px) {
   #about-cards {
     grid-template-columns: 1fr 1fr;
   }
@@ -360,14 +359,29 @@ a {
   margin: 5px;
 }
 
-#contact-message {
+/* #contact-message {
   background-image: url("./images/icons/illus-contact.svg");
   background-repeat: no-repeat;
   background-position-y: 879px;
   background-position-x: 260px;
-  width: 81.25%;
-  margin: auto;
-}
+} */
+
+/* @media (min-width: 900px) {
+  #contact-message {
+    background: url(./images/bg/illusContact.png) center no-repeat;
+    background-position-y: 340px;
+    background-position-x: 100px;
+  }
+} */
+
+/* @media (min-width: 900px) {
+  .about_illus {
+    background-image: url("./images/bg/illusContdesk1.svg");
+    background-repeat: no-repeat;
+    background-position-y: 879px;
+    background-position-x: 260px;
+  }
+} */
 
 footer {
   display: flex;
@@ -381,6 +395,7 @@ form {
   flex-direction: row;
   flex-wrap: wrap;
   width: 327px;
+  margin: auto;
 }
 
 @media (min-width: 992px) {
@@ -423,7 +438,7 @@ form {
   height: 327px;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 990px) {
   #empty-footer {
     display: none;
   }
@@ -442,7 +457,7 @@ form {
 }
 
 #footer-top > * {
-  align-self: baseline;
+  align-self: center;
 }
 
 #footer-text {
@@ -451,7 +466,7 @@ form {
   text-align: center;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 990px) {
   #footer-text {
     line-height: 52px;
     font-size: 40px;
@@ -460,13 +475,13 @@ form {
   }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 990px) {
   #footer-text {
     font-size: 30px;
   }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 990px) {
   #footer-top {
     flex-wrap: nowrap;
     text-align: left;
@@ -480,10 +495,10 @@ form {
   border: none;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 990px) {
   #footer-middile {
     border-top: 1px solid grey;
-    width: 1500px;
+    width: 100%;
     margin-top: 20%;
   }
 }
