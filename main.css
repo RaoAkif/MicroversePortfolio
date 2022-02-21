@@ -17,7 +17,8 @@ body {
   #landing-section {
     background-image: url("./images/bg/head-desk1.svg");
     background-repeat: no-repeat;
-    background-position: 0 94%;
+    background-size: cover;
+    background-position: 0 0;
     height: 147vh;
   }
 }
@@ -295,7 +296,15 @@ a {
 .about_illus {
   background-image: url("./images/bg/a1.svg"), url("./images/bg/a2.svg");
   background-repeat: no-repeat;
-  background-position: 1520px 5%, 0% -40%;
+  background-position: 325px 0%, 0% 0%;
+}
+
+@media (min-width: 990px) {
+  .about_illus {
+    background-image: url("./images/bg/a1.svg"), url("./images/bg/a2.svg");
+    background-repeat: no-repeat;
+    background-position: 1520px 5%, 0% -40%;
+  }
 }
 
 .about-desc {
@@ -364,10 +373,8 @@ a {
 
 @media (min-width: 990px) {
   #contact-message {
-    background-image:
-      url("./images/bg/condes1.svg"),
-      url("./images/bg/condes2.svg"),
-      url("./images/bg/condes3.svg");
+    background-image: url("./images/bg/condes1.svg"),
+      url("./images/bg/condes2.svg"), url("./images/bg/condes3.svg");
     background-repeat: no-repeat;
     background-position: 0 82%, 29% 75%, 100% 82%;
   }
