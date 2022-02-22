@@ -260,7 +260,7 @@ a {
   margin-top: 15px;
   margin-bottom: 15px;
   align-content: center;
-  color: #172B4D;
+  color: #172b4d;
   background-color: #36b37f;
   border-radius: 4px;
   border: none;
@@ -374,10 +374,8 @@ a {
 
 @media (min-width: 990px) {
   #contact-message {
-    background-image:
-      url("./images/bg/condes1.svg"),
-      url("./images/bg/condes2.svg"),
-      url("./images/bg/condes3.svg");
+    background-image: url("./images/bg/condes1.svg"),
+      url("./images/bg/condes2.svg"), url("./images/bg/condes3.svg");
     background-repeat: no-repeat;
     background-position: 0 82%, 29% 75%, 100% 82%;
   }
