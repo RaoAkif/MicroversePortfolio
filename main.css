@@ -1,10 +1,15 @@
 @import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Quicksand&display=swap");
 
+* {
+  font-size: 62.5%; /*10/16 = 62.5%*/
+}
+
 body {
   background-color: #fff;
   font-family: "Roboto", sans-serif;
   margin: 1px;
+  font-size: 1.7rem;
 }
 
 #landing-section {
@@ -80,7 +85,7 @@ a {
 
 .navbar-list-desktop {
   list-style: none;
-  font-size: 15px;
+  font-size: 1.5rem;
   font-weight: 600;
   display: flex;
   justify-content: space-between;
@@ -106,7 +111,7 @@ a {
 
 #hero-section > h1 {
   padding-top: 15px;
-  font-size: 3em;
+  font-size: 3rem;
   line-height: 1.5em;
 }
 
@@ -119,7 +124,6 @@ a {
 #hero-section p {
   margin: auto;
   width: 60%;
-  font-size: medium;
   line-height: 1.5em;
   padding-bottom: 25px;
   color: #172b4d;
@@ -155,7 +159,7 @@ a {
 .section-header {
   margin: auto;
   padding-top: 20px;
-  font-size: 40px;
+  font-size: 4rem;
   width: 70%;
   text-align: center;
   font-weight: 800;
@@ -231,7 +235,7 @@ a {
 
 .project-title {
   color: #3a4a42;
-  font-size: 24px;
+  font-size: 2.4rem;
   text-align: center;
   margin-top: 20px;
   margin-bottom: 15px;
@@ -250,7 +254,9 @@ a {
   background-color: #ebf0ee;
   border-radius: 4px;
   padding: 8px 12px;
-  font-size: 12px;
+  
+  /*font-size: 12px;*/
+  
   list-style: none;
   margin: 5px;
 }
@@ -266,7 +272,6 @@ a {
   border: none;
   width: 122px;
   height: 48px;
-  font-size: 17px;
 }
 
 #get-resume {
@@ -285,7 +290,7 @@ a {
   text-align: center;
   line-height: 1.5em;
   color: #42526e;
-  font-size: 20px;
+  font-size: 2rem;
 }
 
 @media (min-width: 990px) {
@@ -344,7 +349,7 @@ a {
 }
 
 .about-desc-font {
-  font-size: 24px;
+  font-size: 2.4rem;
   color: #344563;
   padding-bottom: 20px;
 }
@@ -361,7 +366,9 @@ a {
   color: #36b37e;
   border-radius: 4px;
   padding: 8px 12px;
-  font-size: 12px;
+  
+  /*font-size: 12px;*/
+  
   list-style: none;
   margin: 5px;
 }
@@ -405,7 +412,7 @@ form {
 }
 
 #email-text {
-  font-size: 20px;
+  font-size: 2rem;
   color: #42526e;
   text-align: center;
 }
@@ -467,7 +474,7 @@ form {
 
 #footer-text {
   line-height: 52px;
-  font-size: 40px;
+  font-size: 4rem;
   text-align: center;
   width: 90%;
   margin: auto;
@@ -485,7 +492,7 @@ form {
 
 @media (min-width: 990px) {
   #footer-text {
-    font-size: 30px;
+    font-size: 3rem;
   }
 }
 
