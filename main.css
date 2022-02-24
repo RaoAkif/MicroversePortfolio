@@ -36,12 +36,12 @@ body {
 }
 
 .button-states {
-  background: #36b37f;
+  background: #28865F;
   border-radius: 4px;
 }
 
 .button-states:hover {
-  background: #36b37f;
+  background: #28865F;
   box-shadow: 1px 8px 16px rgba(54, 179, 127, 0.24);
   border-radius: 4px;
 }
@@ -58,7 +58,7 @@ body {
   line-height: 28px;
   letter-spacing: 0;
   text-align: center;
-  color: #36b37f;
+  color: #28865F;
 }
 
 a {
@@ -260,8 +260,8 @@ a {
   margin-top: 15px;
   margin-bottom: 15px;
   align-content: center;
-  color: #000000;
-  background-color: #36b37f;
+  color: #FFFF;
+  background-color: #28865F;
   border-radius: 4px;
   border: none;
   width: 122px;
