@@ -1,6 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Quicksand&display=swap");
-
 body {
   background-color: #fff;
   font-family: "Roboto", sans-serif;
@@ -36,12 +33,12 @@ body {
 }
 
 .button-states {
-  background: #36b37f;
+  background: #28865f;
   border-radius: 4px;
 }
 
 .button-states:hover {
-  background: #36b37f;
+  background: #28865f;
   box-shadow: 1px 8px 16px rgba(54, 179, 127, 0.24);
   border-radius: 4px;
 }
@@ -58,7 +55,7 @@ body {
   line-height: 28px;
   letter-spacing: 0;
   text-align: center;
-  color: #36b37f;
+  color: #28865f;
 }
 
 a {
@@ -260,12 +257,13 @@ a {
   margin-top: 15px;
   margin-bottom: 15px;
   align-content: center;
-  color: white;
-  background-color: #36b37f;
+  color: #ffff;
+  background-color: #28865f;
   border-radius: 4px;
   border: none;
   width: 122px;
   height: 48px;
+  font-size: 17px;
 }
 
 #get-resume {
