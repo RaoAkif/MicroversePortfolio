@@ -1,3 +1,18 @@
+:root {
+  --color-primary: #172b4d;
+  --color-secondary: #36b37e;
+  --color-tertiary: #3a4a42;
+  --color-text-emphasis: #42526e;
+  --color-white: #fff;
+  --color-light-grey: #ebf0ee;
+  --color-grey-border: #d0d9d4;
+  --color-green-border: #60c095;
+  --color-navbar-links:#344563;
+  --color-button:#28865f;
+  --color-button-hover-shadow:#0d2b1e;
+  --color-button-focus: #008552;
+}
+
 body {
   background-color: #fff;
   font-family: "Roboto", sans-serif;
@@ -26,10 +41,6 @@ body {
 
 .color-contrast {
   color: #36b37e;
-}
-
-.color-secondary {
-  color: #3a4a42;
 }
 
 .button-states {
@@ -174,6 +185,7 @@ a {
   margin: auto;
   width: 48px;
   padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 @media (min-width: 990px) {
@@ -245,6 +257,7 @@ a {
 
 .tag {
   background-color: #ebf0ee;
+  color: #3a4a42;
   border-radius: 4px;
   padding: 8px 12px;
   font-size: 12px;
