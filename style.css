@@ -42,6 +42,13 @@ body {
     padding: 30px 0 479px 32px;
   }
 
+  @media (max-width: 1440px) and (min-width: 901px) {
+    .navbar-list-mobile,
+    #mobile-popup {
+      display: none;
+    }
+  }
+
   #mobile-popup.active {
     opacity: 1;
     pointer-events: auto;
@@ -70,15 +77,18 @@ body {
   }
 }
 
-
-
-@media (min-width: 990px) {
+@media (min-width: 990px) and (max-width: 601px) {
   #landing-section {
     background-image: url("./images/bg/head-desk1.svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0 0;
     height: 147vh;
+  }
+
+  .navbar-list-mobile,
+  #mobile-popup {
+    display: none;
   }
 }
 
