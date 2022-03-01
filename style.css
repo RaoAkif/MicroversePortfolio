@@ -25,7 +25,10 @@ body {
   background-position: 16px 60px;
 }
 
+
 @media (max-width: 600px) {
+  .navbar-list-desktop { display: none !important; }
+
   #mobile-popup {
     left: 0;
     right: 0;
@@ -77,7 +80,11 @@ body {
   }
 }
 
-@media (min-width: 990px) and (max-width: 601px) {
+@media (min-width: 600px) and (max-width: 990px) {
+  .hamburger { display: none; }
+}
+
+@media (min-width: 990px) {
   #landing-section {
     background-image: url("./images/bg/head-desk1.svg");
     background-repeat: no-repeat;
@@ -85,13 +92,13 @@ body {
     background-position: 0 0;
     height: 147vh;
   }
-
+}
+@media (min-width: 601px) {
   .navbar-list-mobile,
   #mobile-popup {
     display: none;
   }
 }
-
 .color-base {
   color: #172b4d;
 }
@@ -153,12 +160,6 @@ a {
   padding-left: 16px;
   width: 250px;
   margin: auto;
-}
-
-@media (max-width: 990px) {
-  .navbar-list-desktop {
-    display: none;
-  }
 }
 
 .navbar-list-desktop > li > a {
