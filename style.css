@@ -7,9 +7,9 @@
   --color-light-grey: #ebf0ee;
   --color-grey-border: #d0d9d4;
   --color-green-border: #60c095;
-  --color-navbar-links:#344563;
-  --color-button:#28865f;
-  --color-button-hover-shadow:#0d2b1e;
+  --color-navbar-links: #344563;
+  --color-button: #28865f;
+  --color-button-hover-shadow: #0d2b1e;
   --color-button-focus: #008552;
 }
 
@@ -25,9 +25,10 @@ body {
   background-position: 16px 60px;
 }
 
-
 @media (max-width: 600px) {
-  .navbar-list-desktop { display: none !important; }
+  .navbar-list-desktop {
+    display: none !important;
+  }
 
   #mobile-popup {
     left: 0;
@@ -73,15 +74,17 @@ body {
   }
 
   #close-icon {
-  width: 15px;
-  float: right;
-  position: absolute;
-  right: 30px;
+    width: 15px;
+    float: right;
+    position: absolute;
+    right: 30px;
   }
 }
 
 @media (min-width: 600px) and (max-width: 990px) {
-  .hamburger { display: none; }
+  .hamburger {
+    display: none;
+  }
 }
 
 @media (min-width: 990px) {
@@ -442,10 +445,8 @@ a {
 
 @media (min-width: 990px) {
   #contact-message {
-    background-image:
-      url("./images/bg/condes1.svg"),
-      url("./images/bg/condes2.svg"),
-      url("./images/bg/condes3.svg");
+    background-image: url("./images/bg/condes1.svg"),
+      url("./images/bg/condes2.svg"), url("./images/bg/condes3.svg");
     background-repeat: no-repeat;
     background-position: 0 82%, 29% 75%, 100% 82%;
   }
