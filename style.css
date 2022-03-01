@@ -49,6 +49,12 @@ body {
   }
 }
 
+#close-icon {
+  width: 15px;
+  float: right;
+  padding-right: 60px;
+}
+
 @media (min-width: 990px) {
   #landing-section {
     background-image: url("./images/bg/head-desk1.svg");
