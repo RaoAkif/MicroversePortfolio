@@ -96,12 +96,14 @@ body {
     height: 147vh;
   }
 }
+
 @media (min-width: 601px) {
   .navbar-list-mobile,
   #mobile-popup {
     display: none;
   }
 }
+
 .color-base {
   color: #172b4d;
 }
