@@ -9,7 +9,7 @@ menuIcon.addEventListener('click', () => {
 
 navBarList.forEach((i) => {
     i.addEventListener('click', () => {
-        mobilePopupNav.classList.remove('active')
+        mobilePopupNav.classList.toggle('active');
     })
 })
 
