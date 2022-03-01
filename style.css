@@ -40,7 +40,7 @@ body {
     pointer-events: none;
     height: 100vh;
     list-style: none;
-    font-size: 40px;
+    font-size: 32px;
     background: white;
     position: fixed;
     padding: 30px 0 479px 32px;
@@ -69,8 +69,14 @@ body {
   }
 
   .navbar-list-mobile li a {
-    color: black;
+    color: #3a4a42;
     text-decoration: none;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+    display: flex;
+    align-items: center;
   }
 
   #close-icon {
