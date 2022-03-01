@@ -1,7 +1,7 @@
-const menuIcon = document.querySelector(".hamburger");
-const closeIcon = document.querySelector("#close-icon");
-const navBarList = document.querySelectorAll(".navbar-list-mobile li");
-const mobilePopupNav = document.querySelector("#mobile-popup");
+const menuIcon = document.querySelector('.hamburger');
+const closeIcon = document.querySelector('#close-icon');
+const navBarList = document.querySelectorAll('.navbar-list-mobile li');
+const mobilePopupNav = document.querySelector('#mobile-popup');
 
 menuIcon.addEventListener('click', () => {
   mobilePopupNav.classList.toggle('active');
