@@ -3,7 +3,7 @@
   --color-secondary: #36b37e;
   --color-tertiary: #3a4a42;
   --color-text-emphasis: #42526e;
-  --color-white: #ffffff;
+  --color-white: #fff;
   --color-light-grey: #ebf0ee;
   --color-grey-border: #d0d9d4;
   --color-green-border: #60c095;
@@ -19,7 +19,7 @@ body {
   margin: 1px;
 }
 
-/* ----- Landing Sections ----- Start*/
+/* ----- Landing Sections ----- Start */
 
 #landing-section {
   background-image: url("./images/bg/background.svg");
@@ -265,9 +265,9 @@ a {
   }
 }
 
-/* ----- Landing Section ----- End*/
+/* ----- Landing Section ----- End */
 
-/* ----- My Recent Works Section ----- Start*/
+/* ----- My Recent Works Section ----- Start */
 
 #my-recent-works-header {
   margin-bottom: 48px;
@@ -354,7 +354,7 @@ a {
   font-size: 17px;
 }
 
-/* ----- About Section ----- Start*/
+/* ----- About Section ----- Start */
 
 #get-resume {
   display: flex;
@@ -453,9 +453,9 @@ a {
   margin: 5px;
 }
 
-/* ----- About Section ----- End*/
+/* ----- About Section ----- End */
 
-/* ----- Contact Section ----- Start*/
+/* ----- Contact Section ----- Start */
 
 #contact-message {
   background-image: url("./images/icons/illus-contact.svg");
@@ -613,4 +613,4 @@ form {
   margin-right: 10px;
 }
 
-/* ----- Contact Section ----- End*/
+/* ----- Contact Section ----- End */
