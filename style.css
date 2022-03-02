@@ -95,16 +95,6 @@ body {
   }
 }
 
-@media (min-width: 990px) {
-  #landing-section {
-    background-image: url("./images/bg/head-desk1.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 0 0;
-    height: 147vh;
-  }
-}
-
 @media (min-width: 601px) {
   .navbar-list-mobile,
   #mobile-popup {
@@ -157,12 +147,6 @@ a {
   padding: 20px;
 }
 
-@media (min-width: 990px) {
-  .navbar-list {
-    display: none;
-  }
-}
-
 .navbar-list-desktop {
   list-style: none;
   font-size: 15px;
@@ -189,12 +173,6 @@ a {
   line-height: 1.5em;
 }
 
-@media (min-width: 990px) {
-  #hero-section {
-    padding-top: 175px;
-  }
-}
-
 #hero-section p {
   margin: auto;
   width: 60%;
@@ -216,12 +194,6 @@ a {
   list-style: none;
 }
 
-@media (min-width: 990px) {
-  #hero-section .social-links {
-    width: 15%;
-  }
-}
-
 #down-arrow {
   padding-top: 50px;
 }
@@ -240,17 +212,6 @@ a {
   font-weight: 800;
 }
 
-#indicator_last-Desktop {
-  display: none;
-}
-
-@media (min-width: 990px) {
-  #indicator_last-Desktop {
-    display: block;
-    padding-bottom: 40px;
-  }
-}
-
 #indicator {
   display: block;
   margin: auto;
@@ -260,6 +221,26 @@ a {
 }
 
 @media (min-width: 990px) {
+  #landing-section {
+    background-image: url("./images/bg/head-desk1.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+    height: 147vh;
+  }
+  
+  .navbar-list {
+    display: none;
+  }
+
+  #hero-section {
+    padding-top: 175px;
+  }
+
+  #hero-section .social-links {
+    width: 15%;
+  }
+
   #indicator {
     display: none;
   }
@@ -273,30 +254,12 @@ a {
   margin-bottom: 48px;
 }
 
-@media (min-width: 990px) {
-  #email-text {
-    display: none;
-  }
-}
-
 #portfolios {
   width: 88.1%;
   margin: auto;
   display: grid;
   row-gap: 15px;
   column-gap: 15px;
-}
-
-@media (min-width: 990px) {
-  #portfolios {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media (min-width: 900px) {
-  #portfolios {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
 }
 
 .portfolio {
@@ -354,6 +317,18 @@ a {
   font-size: 17px;
 }
 
+@media (min-width: 990px) {
+  #email-text {
+    display: none;
+  }
+  
+  #portfolios {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+/* ----- My Recent Works Section ----- End */
+
 /* ----- About Section ----- Start */
 
 #get-resume {
@@ -375,24 +350,10 @@ a {
   font-size: 20px;
 }
 
-@media (min-width: 990px) {
-  .about-section-details {
-    width: 50%;
-  }
-}
-
 .about_illus {
   background-image: url("./images/bg/a1.svg"), url("./images/bg/a2.svg");
   background-repeat: no-repeat;
   background-position: 325px 0%, 0% 0%;
-}
-
-@media (min-width: 990px) {
-  .about_illus {
-    background-image: url("./images/bg/a1.svg"), url("./images/bg/a2.svg");
-    background-repeat: no-repeat;
-    background-position: 1520px 5%, 0% -40%;
-  }
 }
 
 .about-desc {
@@ -412,12 +373,6 @@ a {
   display: grid;
   row-gap: 25px;
   margin-top: 50px;
-}
-
-@media (min-width: 990px) {
-  #about-cards {
-    grid-template-columns: 1fr 1fr;
-  }
 }
 
 .about-icon {
@@ -447,9 +402,19 @@ a {
   margin: 5px;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 990px) {
+  .about-section-details {
+    width: 50%;
+  }
+
   #about-cards {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .about_illus {
+    background-image: url("./images/bg/a1.svg"), url("./images/bg/a2.svg");
+    background-repeat: no-repeat;
+    background-position: 1520px 5%, 0% -40%;
   }
 }
 
@@ -550,6 +515,10 @@ form {
   margin-right: 10px;
 }
 
+#indicator_last-Desktop {
+  display: none;
+}
+
 @media (min-width: 990px) {
   #contact-message {
     background-image:
@@ -591,6 +560,12 @@ form {
     width: 100%;
     margin-top: 20%;
   }
+  
+  #indicator_last-Desktop {
+    display: block;
+    padding-bottom: 40px;
+  }
 }
 
 /* ----- Contact Section ----- End */
+
