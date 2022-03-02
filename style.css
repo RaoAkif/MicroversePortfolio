@@ -420,12 +420,6 @@ a {
   }
 }
 
-@media (min-width: 900px) {
-  #about-cards {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
-
 .about-icon {
   padding-top: 30px;
 }
@@ -453,6 +447,16 @@ a {
   margin: 5px;
 }
 
+@media (min-width: 900px) {
+  #about-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  #about-cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
 /* ----- About Section ----- End */
 
 /* ----- Contact Section ----- Start */
@@ -461,17 +465,6 @@ a {
   background-image: url("./images/icons/illus-contact.svg");
   background-repeat: no-repeat;
   background-position: 335px 61%;
-}
-
-@media (min-width: 990px) {
-  #contact-message {
-    background-image:
-      url("./images/bg/condes1.svg"),
-      url("./images/bg/condes2.svg"),
-      url("./images/bg/condes3.svg");
-    background-repeat: no-repeat;
-    background-position: 0 82%, 29% 75%, 100% 82%;
-  }
 }
 
 footer {
@@ -487,12 +480,6 @@ form {
   flex-wrap: wrap;
   width: 327px;
   margin: auto;
-}
-
-@media (min-width: 992px) {
-  form {
-    width: 654px;
-  }
 }
 
 #email-text {
@@ -529,12 +516,6 @@ form {
   height: 327px;
 }
 
-@media (min-width: 990px) {
-  #empty-footer {
-    display: none;
-  }
-}
-
 #indicator_last {
   margin: auto;
   display: block;
@@ -547,15 +528,6 @@ form {
   align-items: center;
 }
 
-@media (min-width: 990px) {
-  #footer-top {
-    padding-top: 160px;
-    width: 85%;
-    display: flex;
-    margin: auto;
-  }
-}
-
 #footer-text {
   line-height: 52px;
   font-size: 40px;
@@ -565,42 +537,11 @@ form {
   padding-top: 60px;
 }
 
-@media (min-width: 990px) {
-  #footer-text {
-    line-height: 52px;
-    text-align: justify;
-    padding-bottom: 63px;
-    width: 30%;
-  }
-}
-
-@media (min-width: 990px) {
-  #footer-text {
-    font-size: 30px;
-  }
-}
-
-@media (min-width: 990px) {
-  #footer-top {
-    flex-wrap: nowrap;
-    text-align: justify;
-    justify-content: space-around;
-  }
-}
-
 #footer-middile {
   display: flex;
   flex-direction: column;
   margin: auto;
   border: none;
-}
-
-@media (min-width: 990px) {
-  #footer-middile {
-    border-top: 1px solid grey;
-    width: 100%;
-    margin-top: 20%;
-  }
 }
 
 #footer-middile > * {
@@ -613,4 +554,41 @@ form {
   margin-right: 10px;
 }
 
+@media (min-width: 990px) {
+  #contact-message {
+    background-image:
+      url("./images/bg/condes1.svg"),
+      url("./images/bg/condes2.svg"),
+      url("./images/bg/condes3.svg");
+    background-repeat: no-repeat;
+    background-position: 0 82%, 29% 75%, 100% 82%;
+  }
+  form {
+    width: 654px;
+  }
+  #empty-footer {
+    display: none;
+  }
+  #footer-text {
+    line-height: 52px;
+    text-align: justify;
+    padding-bottom: 63px;
+    width: 30%;
+    font-size: 30px;
+  }
+  #footer-top {
+    padding-top: 160px;
+    width: 85%;
+    display: flex;
+    margin: auto;
+    flex-wrap: nowrap;
+    text-align: justify;
+    justify-content: space-around;
+  }
+  #footer-middile {
+    border-top: 1px solid grey;
+    width: 100%;
+    margin-top: 20%;
+  }
+}
 /* ----- Contact Section ----- End */
