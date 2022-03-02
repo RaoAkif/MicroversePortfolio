@@ -19,6 +19,8 @@ body {
   margin: 1px;
 }
 
+/* ----- Landing Sections ----- Start*/
+
 #landing-section {
   background-image: url("./images/bg/background.svg");
   background-repeat: no-repeat;
@@ -263,6 +265,10 @@ a {
   }
 }
 
+/* ----- Landing Section ----- End*/
+
+/* ----- My Recent Works Section ----- Start*/
+
 #my-recent-works-header {
   margin-bottom: 48px;
 }
@@ -347,6 +353,8 @@ a {
   height: 48px;
   font-size: 17px;
 }
+
+/* ----- About Section ----- Start*/
 
 #get-resume {
   display: flex;
@@ -444,6 +452,10 @@ a {
   list-style: none;
   margin: 5px;
 }
+
+/* ----- About Section ----- End*/
+
+/* ----- Contact Section ----- Start*/
 
 #contact-message {
   background-image: url("./images/icons/illus-contact.svg");
@@ -600,3 +612,5 @@ form {
   margin-left: 10px;
   margin-right: 10px;
 }
+
+/* ----- Contact Section ----- End*/
