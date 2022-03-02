@@ -228,7 +228,7 @@ a {
     background-position: 0 0;
     height: 147vh;
   }
-  
+
   .navbar-list {
     display: none;
   }
@@ -321,7 +321,7 @@ a {
   #email-text {
     display: none;
   }
-  
+
   #portfolios {
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -560,7 +560,7 @@ form {
     width: 100%;
     margin-top: 20%;
   }
-  
+
   #indicator_last-Desktop {
     display: block;
     padding-bottom: 40px;
@@ -568,4 +568,3 @@ form {
 }
 
 /* ----- Contact Section ----- End */
-
