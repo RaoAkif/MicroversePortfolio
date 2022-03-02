@@ -321,7 +321,7 @@ a {
   #email-text {
     display: none;
   }
-  
+
   #portfolios {
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -560,7 +560,7 @@ form {
     width: 100%;
     margin-top: 20%;
   }
-  
+
   #indicator_last-Desktop {
     display: block;
     padding-bottom: 40px;
