@@ -449,10 +449,6 @@ a {
 
 @media (min-width: 900px) {
   #about-cards {
-    grid-template-columns: 1fr 1fr;
-  }
-  
-  #about-cards {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
@@ -563,12 +559,15 @@ form {
     background-repeat: no-repeat;
     background-position: 0 82%, 29% 75%, 100% 82%;
   }
+
   form {
     width: 654px;
   }
+
   #empty-footer {
     display: none;
   }
+
   #footer-text {
     line-height: 52px;
     text-align: justify;
@@ -576,6 +575,7 @@ form {
     width: 30%;
     font-size: 30px;
   }
+
   #footer-top {
     padding-top: 160px;
     width: 85%;
@@ -585,6 +585,7 @@ form {
     text-align: justify;
     justify-content: space-around;
   }
+  
   #footer-middile {
     border-top: 1px solid grey;
     width: 100%;
