@@ -40,8 +40,8 @@ function validateEmail(input) {
 
 const formData = {
   name: form.elements.name.value,
-  email: form.elements.name.value,
-  description: form.elements.name.value,
+  email: form.elements.email.value,
+  description: form.elements.description.value,
 };
 
 form.addEventListener('submit', (event) => {
@@ -56,9 +56,9 @@ form.addEventListener('submit', (event) => {
 
 const displayData = () => {
   const { name, email, description } = JSON.parse(localStorage.getItem('formData'));
-  // form.elements.name.value = name;
-  // form.elements.email.value = email;
-  // form.elements.description.value = description;
+  form.elements.name.value = name;
+  form.elements.email.value = email;
+  form.elements.description.value = description;
 };
 
 displayData();
