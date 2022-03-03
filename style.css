@@ -534,8 +534,8 @@ form {
   }
 
   #email-invalidation-message {
-    color: red !important;
-    margin: auto !important;
+    color: red;
+    margin: auto;
   }
 
   #empty-footer {

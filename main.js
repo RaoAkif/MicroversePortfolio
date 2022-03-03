@@ -17,7 +17,6 @@ closeIcon.addEventListener('click', () => {
   mobilePopupNav.classList.toggle('active');
 });
 
-
 // --------FORM VALIDATION----------
 
 const form = document.getElementById('form');
