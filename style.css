@@ -519,6 +519,11 @@ form {
   display: none;
 }
 
+#email-invalidation-message {
+  color: red;
+  margin: auto;
+}
+
 @media (min-width: 990px) {
   #contact-message {
     background-image:
@@ -531,11 +536,6 @@ form {
 
   form {
     width: 654px;
-  }
-
-  #email-invalidation-message {
-    color: red;
-    margin: auto;
   }
 
   #empty-footer {
