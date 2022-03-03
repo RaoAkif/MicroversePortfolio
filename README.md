@@ -11,7 +11,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://raoakif.github.io/portfolio.github.io/)
+[Live Demo Link](https://raoakif.github.io/Portfolio/)
 
 
 ## 👤 Author
