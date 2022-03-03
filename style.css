@@ -533,6 +533,11 @@ form {
     width: 654px;
   }
 
+  #email-invalidation-message {
+    color: red !important;
+    margin: auto !important;
+  }
+
   #empty-footer {
     display: none;
   }
