@@ -1,9 +1,9 @@
-import {
-  menuIconMobile, menuLinks, openMenu, closeMenu,
-} from './menu.js';
+// import {
+//   menuIconMobile, menuLinks, openMenu, closeMenu,
+// } from './menu.js';
 
 // Popup window functionality
-import { createModal, projects } from './popup.js';
+// import { createModal, projects } from './popup.js';
 
 // Start Popup window functionality ------------------------------------->
 document.addEventListener('DOMContentLoaded', () => {
@@ -90,3 +90,107 @@ document.addEventListener('DOMContentLoaded', () => {
   closeIcon.addEventListener('click', closeModal);
 });
 // Finish Popup window functionality ------------------------------------->
+
+const projects = [
+  {
+    title: 'Project 1',
+    image: 'https://raw.githubusercontent.com/RaoAkif/Portfolio/Project_Modal/images/portfolio_modal/Portfolio_Projects%20-%20Mobile%20Modal_1.png',
+    description:
+      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    tags: {
+      tag1: 'HTML',
+      tag2: 'CSS',
+      tag3: 'JS',
+    },
+    linkLive: '#',
+    linkSource: '#',
+  },
+  {
+    title: 'Project 2',
+    image: 'https://raw.githubusercontent.com/RaoAkif/Portfolio/Project_Modal/images/portfolio_modal/Portfolio_Projects%20-%20Mobile%20Modal_2.png',
+    description:
+      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    tags: {
+      tag1: 'HTML',
+      tag2: 'CSS',
+      tag3: 'JS',
+    },
+    linkLive: '#',
+    linkSource: '#',
+  },
+  {
+    title: 'Project 3',
+    image: 'https://raw.githubusercontent.com/RaoAkif/Portfolio/Project_Modal/images/portfolio_modal/Portfolio_Projects%20-%20Mobile%20Modal_3.png',
+    description:
+      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    tags: {
+      tag1: 'HTML',
+      tag2: 'CSS',
+      tag3: 'JS',
+    },
+    linkLive: '#',
+    linkSource: '#',
+  },
+  {
+    title: 'Project 4',
+    image: 'https://raw.githubusercontent.com/RaoAkif/Portfolio/Project_Modal/images/portfolio_modal/Portfolio_Projects%20-%20Mobile%20Modal_4.png',
+    description:
+      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    tags: {
+      tag1: 'HTML',
+      tag2: 'CSS',
+      tag3: 'JS',
+    },
+    linkLive: '#',
+    linkSource: '#',
+  },
+  {
+    title: 'Project 5',
+    image: 'https://raw.githubusercontent.com/RaoAkif/Portfolio/Project_Modal/images/portfolio_modal/Portfolio_Projects%20-%20Mobile%20Modal_5.png',
+    description:
+      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    tags: {
+      tag1: 'HTML',
+      tag2: 'CSS',
+      tag3: 'JS',
+    },
+    linkLive: '#',
+    linkSource: '#',
+  },
+  {
+    title: 'Project 6',
+    image: 'https://raw.githubusercontent.com/RaoAkif/Portfolio/Project_Modal/images/portfolio_modal/Portfolio_Projects%20-%20Mobile%20Modal_6.png',
+    description:
+      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    tags: {
+      tag1: 'HTML',
+      tag2: 'CSS',
+      tag3: 'JS',
+    },
+    linkLive: '#',
+    linkSource: '#',
+  },
+];
+
+
+
+
+const Portfolios = document.getElementById("portfolios");
+  
+  projects.forEach(project => {
+      console.log(project.image);
+    Portfolios.innerHTML += `
+    <div class="portfolio">
+        <img class="portfolio-image" src=${project.image} alt="portfolio_image" />
+        <div class="portfolio-desc">
+        <h2 class="project-title">${project.title}</h2>
+        <ul class="tags">
+        <li class="tag">${project.tags.tag1}</li>
+        <li class="tag">${project.tags.tag2}</li>
+        <li class="tag">${project.tags.tag3}</li>
+        </ul>
+        <button type="button" class="primary-button button-states">See Project</button>
+        </div>
+    </div>
+    `;
+})

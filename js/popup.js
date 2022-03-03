@@ -1,7 +1,7 @@
 export const projects = [
   {
     title: 'Project 1',
-    image: 'images/potfolio_modal/Portfolio_Projects - Mobile Modal_1',
+    image: 'https://raw.githubusercontent.com/RaoAkif/Portfolio/Project_Modal/images/portfolio_modal/Portfolio_Projects%20-%20Mobile%20Modal_1.png',
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     tags: {
@@ -14,7 +14,7 @@ export const projects = [
   },
   {
     title: 'Project 2',
-    image: 'images/potfolio_modal/Portfolio_Projects - Mobile Modal_2',
+    image: 'https://raw.githubusercontent.com/RaoAkif/Portfolio/Project_Modal/images/portfolio_modal/Portfolio_Projects%20-%20Mobile%20Modal_2.png',
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     tags: {
@@ -27,7 +27,7 @@ export const projects = [
   },
   {
     title: 'Project 3',
-    image: 'images/potfolio_modal/Portfolio_Projects - Mobile Modal_3',
+    image: 'https://raw.githubusercontent.com/RaoAkif/Portfolio/Project_Modal/images/portfolio_modal/Portfolio_Projects%20-%20Mobile%20Modal_3.png',
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     tags: {
@@ -40,7 +40,7 @@ export const projects = [
   },
   {
     title: 'Project 4',
-    image: 'images/potfolio_modal/Portfolio_Projects - Mobile Modal_4',
+    image: 'https://raw.githubusercontent.com/RaoAkif/Portfolio/Project_Modal/images/portfolio_modal/Portfolio_Projects%20-%20Mobile%20Modal_4.png',
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     tags: {
@@ -53,7 +53,7 @@ export const projects = [
   },
   {
     title: 'Project 5',
-    image: 'images/potfolio_modal/Portfolio_Projects - Mobile Modal_5',
+    image: 'https://raw.githubusercontent.com/RaoAkif/Portfolio/Project_Modal/images/portfolio_modal/Portfolio_Projects%20-%20Mobile%20Modal_5.png',
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     tags: {
@@ -66,7 +66,7 @@ export const projects = [
   },
   {
     title: 'Project 6',
-    image: 'images/potfolio_modal/Portfolio_Projects - Mobile Modal_6',
+    image: 'https://raw.githubusercontent.com/RaoAkif/Portfolio/Project_Modal/images/portfolio_modal/Portfolio_Projects%20-%20Mobile%20Modal_6.png',
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     tags: {
