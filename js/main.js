@@ -101,6 +101,8 @@ const projects = [
       tag1: 'HTML',
       tag2: 'CSS',
       tag3: 'JS',
+      tag4: 'React',
+      tag5: 'Ruby'
     },
     linkLive: '#',
     linkSource: '#',
@@ -114,6 +116,8 @@ const projects = [
       tag1: 'HTML',
       tag2: 'CSS',
       tag3: 'JS',
+      tag4: 'React',
+      tag5: 'Ruby'
     },
     linkLive: '#',
     linkSource: '#',
@@ -127,6 +131,8 @@ const projects = [
       tag1: 'HTML',
       tag2: 'CSS',
       tag3: 'JS',
+      tag4: 'React',
+      tag5: 'Ruby'
     },
     linkLive: '#',
     linkSource: '#',
@@ -140,6 +146,8 @@ const projects = [
       tag1: 'HTML',
       tag2: 'CSS',
       tag3: 'JS',
+      tag4: 'React',
+      tag5: 'Ruby'
     },
     linkLive: '#',
     linkSource: '#',
@@ -153,6 +161,8 @@ const projects = [
       tag1: 'HTML',
       tag2: 'CSS',
       tag3: 'JS',
+      tag4: 'React',
+      tag5: 'Ruby'
     },
     linkLive: '#',
     linkSource: '#',
@@ -166,6 +176,8 @@ const projects = [
       tag1: 'HTML',
       tag2: 'CSS',
       tag3: 'JS',
+      tag4: 'React',
+      tag5: 'Ruby'
     },
     linkLive: '#',
     linkSource: '#',
@@ -188,6 +200,8 @@ const Portfolios = document.getElementById("portfolios");
         <li class="tag">${project.tags.tag1}</li>
         <li class="tag">${project.tags.tag2}</li>
         <li class="tag">${project.tags.tag3}</li>
+        <li class="tag">${project.tags.tag4}</li>
+        <li class="tag">${project.tags.tag5}</li>
         </ul>
         <button type="button" class="primary-button button-states">See Project</button>
         </div>
