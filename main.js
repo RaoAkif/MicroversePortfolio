@@ -21,9 +21,7 @@ closeIcon.addEventListener('click', () => {
 
 const form = document.getElementById('form');
 const small = document.getElementsByTagName('small')[0];
-const name = document.getElementById('name');
 const email = document.getElementById('email-address');
-const description = document.getElementById('description');
 
 function validateEmail(input) {
   const address = input.toString();
