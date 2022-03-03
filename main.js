@@ -55,7 +55,7 @@ form.addEventListener('submit', (event) => {
 });
 
 const displayData = () => {
-  const { name, email, message } = JSON.parse(localStorage.getItem('formData'));
+  const { name, email, description } = JSON.parse(localStorage.getItem('formData'));
 };
 
 displayData();
