@@ -572,10 +572,23 @@ form {
 /* ----- Mobile Modal Styling ----- Start */
 
 #modal-window {
+  display: none;
   background-color: #c1c7d0;
   padding: 20px 26px 26px 16px;
   width: 100vw;
   font-family: "Roboto", sans-serif;
+}
+
+#modal-window.active {
+  display: block;
+}
+
+#modal {
+  width: 342px;
+  background-color: white;
+  border: 1px solid #dfe1e6;
+  box-sizing: border-box;
+  border-radius: 16px;
 }
 
 #mobile-modal {
@@ -605,7 +618,7 @@ form {
 }
 
 #mobile-modal-title {
-    padding: 0px 16px;
+  padding: 0px 16px;
   font-size: 32px;
   font-style: normal;
   font-weight: 600;
@@ -613,6 +626,7 @@ form {
   letter-spacing: 0em;
   text-align: left;
   margin: 0;
+  color: var(--color-primary);
 }
 
 #mobile-modal-tags {
@@ -633,14 +647,15 @@ form {
 }
 
 #mobile-modal-description {
-    padding: 0px 16px;
+  padding: 0px 16px;
   text-align: justify;
+  line-height: 24px;
 }
 
 #links-project {
-    padding-left: 0;
-    display: flex;
-    justify-content: space-around;
+  padding-left: 0;
+  display: flex;
+  justify-content: space-around;
 }
 
 .links {
@@ -655,11 +670,127 @@ form {
   align-content: center;
 }
 
+#live-link > a, #source-link > a {
+  color: white;
+}
+
 .link-icons {
     padding: 0;
     padding-left: 10px;
     width: 20px;
     height: 20px;
+}
+
+@media (min-width: 990px) {
+  #modal-window {
+    display: none;
+    background-color: #c1c7d0;
+    padding: 20px 26px 26px 16px;
+    width: 100vw;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  #modal-window.active {
+    display: block;
+  }
+  
+  #modal {
+    width: 342px;
+    background-color: white;
+    border: 1px solid #dfe1e6;
+    box-sizing: border-box;
+    border-radius: 16px;
+  }
+  
+  #mobile-modal {
+    width: 342px;
+    background-color: white;
+    border: 1px solid #dfe1e6;
+    box-sizing: border-box;
+    border-radius: 16px;
+  }
+  
+  #mobile-modal-image {
+    padding: 16px;
+    width: 311px;
+    height: 220px;
+    display: flex;
+    margin: auto;
+    border-radius: 30px;
+  }
+  
+  #mobile-modal-close-icon {
+    width: 15px;
+    float: right;
+    position: absolute;
+    right: 65px;
+    top: 65px;
+    color: white;
+  }
+  
+  #mobile-modal-title {
+    padding: 0px 16px;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 44px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0;
+    color: var(--color-primary);
+  }
+  
+  #mobile-modal-tags {
+    padding: 0px 16px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+  }
+  
+  #mobile-modal-tags > * {
+    padding: 8px 12px;
+    margin: 0px 5px;
+    background: lightgray;
+    margin-left: 0;
+    border-radius: 4px;
+    margin-top: 8px;
+  }
+  
+  #mobile-modal-description {
+    padding: 0px 16px;
+    text-align: justify;
+    line-height: 24px;
+  }
+  
+  #links-project {
+    padding-left: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .links {
+    list-style: none;
+    border-radius: 4px;
+    background-color: #36b37f;
+    color: white;
+    border: none;
+    padding: 12px 16px;
+    font-size: 17px;
+    display: flex;
+    align-content: center;
+  }
+  
+  #live-link > a, #source-link > a {
+    color: white;
+  }
+  
+  .link-icons {
+      padding: 0;
+      padding-left: 10px;
+      width: 20px;
+      height: 20px;
+  }
 }
 
 /* ----- Mobile Modal Styling ----- End */
