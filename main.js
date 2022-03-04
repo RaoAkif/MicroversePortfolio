@@ -196,9 +196,9 @@ window.onload = () => {
   // Check if the form data object is found on localStorage
   if (savedFormData) {
   // populate inputs values if data was found
-  fullName.value = savedFormData.fullName;
-  emailAddress.value = savedFormData.emailAddress;
-  message.value = savedFormData.message;
+    fullName.value = savedFormData.fullName;
+    emailAddress.value = savedFormData.emailAddress;
+    message.value = savedFormData.message;
+  }
 };
-}
 // --------LOCAL STORAGE---------- // END
