@@ -13,10 +13,6 @@ navBarList.forEach((i) => {
   });
 });
 
-closeIcon.addEventListener('click', () => {
-  mobilePopupNav.classList.toggle('active');
-});
-
 // ----------------- Popup window functionality ----------------------- START//
 
 const projects = [
@@ -143,11 +139,14 @@ projects.forEach((project, index) => {
 `;
 });
 
+const landingPage = document.querySelector('#landing-page');
 const seeProject = document.querySelectorAll('.see-project');
 const modalWindow = document.querySelector('#modal-window');
+
 function closeModal() {
   modalWindow.removeChild(document.getElementById('modal'));
   modalWindow.classList.toggle('active');
+  landingPage.classList.toggle('active');
 }
 
 for (let i = 0; i < projects.length; i += 1) {
@@ -173,6 +172,7 @@ for (let i = 0; i < projects.length; i += 1) {
     modalWindow.innerHTML = MobileModal;
     window.scrollTo({ top: 0, behavior: 'smooth' });
     modalWindow.classList.toggle('active');
+    landingPage.classList.toggle('active');
   });
 }
 
