@@ -124,8 +124,8 @@ projects.forEach((project, index) => {
   Portfolios.innerHTML += `
     <div class='portfolio'>
       <img class='portfolio-image' src=${
-        project.image
-      } alt='portfolio_image_${index}' />
+  project.image
+} alt='portfolio_image_${index}' />
       <div class='portfolio-desc'>
       <h2 class='project-title'>${project.title}</h2>
       <ul class='tags'>
@@ -136,8 +136,8 @@ projects.forEach((project, index) => {
       <li class='tag'>${project.tags.tag5}</li>
       </ul>
       <button type='button' id='see-project-${
-        index + 1
-      }' class='primary-button button-states see-project'>See Project</button>
+  index + 1
+}' class='primary-button button-states see-project'>See Project</button>
     </div>
 </div>
 `;
