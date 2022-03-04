@@ -628,7 +628,7 @@ form {
   font-style: normal;
   font-weight: 600;
   line-height: 44px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: left;
   margin: 0;
   color: var(--color-primary);
@@ -740,7 +740,7 @@ form {
     font-style: normal;
     font-weight: 600;
     line-height: 44px;
-    letter-spacing: 0em;
+    letter-spacing: 0;
     text-align: left;
     margin: 0;
     color: var(--color-primary);
@@ -793,13 +793,11 @@ form {
   }
 
   .link-icons {
-      padding: 0;
-      padding-left: 10px;
-      width: 20px;
-      height: 20px;
+    padding: 0;
+    padding-left: 10px;
+    width: 20px;
+    height: 20px;
   }
 }
 
 /* ----- Mobile Modal Styling ----- End */
-
-
