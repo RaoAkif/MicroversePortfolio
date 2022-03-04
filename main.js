@@ -15,6 +15,131 @@ navBarList.forEach((i) => {
 
 closeIcon.addEventListener('click', () => {
   mobilePopupNav.classList.toggle('active');
+
+// ----------------- Popup window functionality ----------------------- START//
+
+const projects = [
+  {
+    title: 'Project 1: Keeping track of hundreds of components',
+    image:
+      'https://raw.githubusercontent.com/RaoAkif/Portfolio/main/images/portfolio_modal/Portfolio_Projects%20-%20Mobile%20Modal_1.png',
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the release.",
+    tags: {
+      tag1: 'HTML',
+      tag2: 'CSS',
+      tag3: 'JS',
+      tag4: 'React',
+      tag5: 'Ruby',
+    },
+    linkLive: '#',
+    linkSource: '#',
+  },
+  {
+    title: 'Project 2: Keeping track of hundreds of components',
+    image:
+      'https://raw.githubusercontent.com/RaoAkif/Portfolio/main/images/portfolio_modal/Portfolio_Projects%20-%20Mobile%20Modal_2.png',
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the release.",
+    tags: {
+      tag1: 'HTML',
+      tag2: 'CSS',
+      tag3: 'JS',
+      tag4: 'React',
+      tag5: 'Ruby',
+    },
+    linkLive: '#',
+    linkSource: '#',
+  },
+  {
+    title: 'Project 3: Keeping track of hundreds of components',
+    image:
+      'https://raw.githubusercontent.com/RaoAkif/Portfolio/main/images/portfolio_modal/Portfolio_Projects%20-%20Mobile%20Modal_3.png',
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the release.",
+    tags: {
+      tag1: 'HTML',
+      tag2: 'CSS',
+      tag3: 'JS',
+      tag4: 'React',
+      tag5: 'Ruby',
+    },
+    linkLive: '#',
+    linkSource: '#',
+  },
+  {
+    title: 'Project 4: Keeping track of hundreds of components',
+    image:
+      'https://raw.githubusercontent.com/RaoAkif/Portfolio/main/images/portfolio_modal/Portfolio_Projects%20-%20Mobile%20Modal_4.png',
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the release.",
+    tags: {
+      tag1: 'HTML',
+      tag2: 'CSS',
+      tag3: 'JS',
+      tag4: 'React',
+      tag5: 'Ruby',
+    },
+    linkLive: '#',
+    linkSource: '#',
+  },
+  {
+    title: 'Project 5: Keeping track of hundreds of components',
+    image:
+      'https://raw.githubusercontent.com/RaoAkif/Portfolio/main/images/portfolio_modal/Portfolio_Projects%20-%20Mobile%20Modal_5.png',
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the release.",
+    tags: {
+      tag1: 'HTML',
+      tag2: 'CSS',
+      tag3: 'JS',
+      tag4: 'React',
+      tag5: 'Ruby',
+    },
+    linkLive: '#',
+    linkSource: '#',
+  },
+  {
+    title: 'Project 6: Keeping track of hundreds of components',
+    image:
+      'https://raw.githubusercontent.com/RaoAkif/Portfolio/main/images/portfolio_modal/Portfolio_Projects%20-%20Mobile%20Modal_6.png',
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the release.",
+    tags: {
+      tag1: 'HTML',
+      tag2: 'CSS',
+      tag3: 'JS',
+      tag4: 'React',
+      tag5: 'Ruby',
+    },
+    linkLive: '#',
+    linkSource: '#',
+  },
+];
+
+const Portfolios = document.querySelector('#portfolios');
+
+projects.forEach((project, index) => {
+  Portfolios.innerHTML += `
+    <div class='portfolio'>
+      <img class='portfolio-image' src=${
+  project.image
+} alt='portfolio_image_${index}' />
+      <div class='portfolio-desc'>
+      <h2 class='project-title'>${project.title}</h2>
+      <ul class='tags'>
+      <li class='tag'>${project.tags.tag1}</li>
+      <li class='tag'>${project.tags.tag2}</li>
+      <li class='tag'>${project.tags.tag3}</li>
+      <li class='tag'>${project.tags.tag4}</li>
+      <li class='tag'>${project.tags.tag5}</li>
+      </ul>
+      <button type='button' id='see-project-${
+  index + 1
+}' class='primary-button button-states see-project'>See Project</button>
+    </div>
+</div>
+`;
 });
 
 // --------FORM VALIDATION---------- // START
