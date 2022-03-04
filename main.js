@@ -154,19 +154,21 @@ for (let i = 0; i < projects.length; i += 1) {
       <div id='modal'>
         <img id='mobile-modal-image' src=${projects[i].image} alt=''>
         <img id='mobile-modal-close-icon' src='./images/icons/mobile-modal-close.svg' alt='close icon' ${closeModal} onclick='closeModal()' >
-        <h2 id='mobile-modal-title'>${projects[i].title}</h2>
-        <ul id='mobile-modal-tags'>
-        <li class='tag'>${projects[i].tags.tag1}</li>
-        <li class='tag'>${projects[i].tags.tag2}</li>
-        <li class='tag'>${projects[i].tags.tag3}</li>
-        <li class='tag'>${projects[i].tags.tag4}</li>
-        <li class='tag'>${projects[i].tags.tag5}</li>
-        </ul>
-        <p id='mobile-modal-description'>${projects[i].description}</p>
-        <ul id='links-project'>
-        <li class='links' id='live-link'><a href=${projects[i].linkLive}>See Live<img class='link-icons' src='./images/icons/see-live.svg' alt=''></a></li>
-        <li class='links' id='source-link'><a href=${projects[i].linkSource}>See Source<img class='link-icons' src='./images/icons/see-source.svg' alt=''></a></li>
-        </ul>
+        <div id='modal-elements'>
+          <h2 id='mobile-modal-title'>${projects[i].title}</h2>
+          <ul id='mobile-modal-tags'>
+          <li class='tag'>${projects[i].tags.tag1}</li>
+          <li class='tag'>${projects[i].tags.tag2}</li>
+          <li class='tag'>${projects[i].tags.tag3}</li>
+          <li class='tag'>${projects[i].tags.tag4}</li>
+          <li class='tag'>${projects[i].tags.tag5}</li>
+          </ul>
+          <p id='mobile-modal-description'>${projects[i].description}</p>
+          <ul id='links-project'>
+          <li class='links' id='live-link'><a href=${projects[i].linkLive}>See Live<img class='link-icons' src='./images/icons/see-live.svg' alt=''></a></li>
+          <li class='links' id='source-link'><a href=${projects[i].linkSource}>See Source<img class='link-icons' src='./images/icons/see-source.svg' alt=''></a></li>
+          </ul>
+        </div>
         </div>`;
     modalWindow.innerHTML = MobileModal;
     window.scrollTo({ top: 0, behavior: 'smooth' });

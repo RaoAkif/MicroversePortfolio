@@ -629,6 +629,11 @@ form {
   color: white;
 }
 
+#modal-elements {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 #mobile-modal-title {
   padding: 0 16px;
   font-size: 32px;
@@ -654,8 +659,8 @@ form {
   margin: 0 5px;
   background: lightgray;
   margin-left: 0;
-  border-radius: 4px;
   margin-top: 8px;
+  border-radius: 4px;
 }
 
 #mobile-modal-description {
@@ -694,7 +699,17 @@ form {
   height: 20px;
 }
 
+#modal-elements :nth-child(1) { order: 1; }
+#modal-elements :nth-child(2) { order: 2; }
+#modal-elements :nth-child(3) { order: 3; }
+#modal-elements :nth-child(4) { order: 4; }
+
 @media (min-width: 990px) {
+  #modal-elements :nth-child(1) { order: 1; }
+  #modal-elements :nth-child(2) { order: 3; }
+  #modal-elements :nth-child(3) { order: 4; }
+  #modal-elements :nth-child(4) { order: 2; }
+  
   #modal-window {
     /* display: none; */
     background-color: #c1c7d0;
@@ -753,9 +768,10 @@ form {
     font-style: normal;
     font-weight: 600;
     line-height: 44px;
-    letter-spacing: 0em;
+    letter-spacing: 0;
     text-align: left;
     margin: 0;
+    width: 50%;
     color: var(--color-primary);
   }
 
@@ -774,6 +790,7 @@ form {
     margin-left: 0;
     border-radius: 4px;
     margin-top: 8px;
+    height: 16px;
   }
 
   #mobile-modal-description {
