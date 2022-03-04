@@ -1,5 +1,4 @@
 const menuIcon = document.querySelector('.hamburger');
-const closeIcon = document.querySelector('#close-icon');
 const navBarList = document.querySelectorAll('.navbar-list-mobile li');
 const mobilePopupNav = document.querySelector('#mobile-popup');
 
@@ -12,10 +11,6 @@ navBarList.forEach((i) => {
     mobilePopupNav.classList.toggle('active');
   });
 });
-
-closeIcon.addEventListener('click', () => {
-  mobilePopupNav.classList.toggle('active');
-
 // ----------------- Popup window functionality ----------------------- START//
 
 const projects = [
@@ -201,9 +196,9 @@ window.onload = () => {
   // Check if the form data object is found on localStorage
   if (savedFormData) {
   // populate inputs values if data was found
-  fullName.value = savedFormData.fullName
-  emailAddress.value = savedFormData.emailAddress
-  message.value = savedFormData.message
+  fullName.value = savedFormData.fullName;
+  emailAddress.value = savedFormData.emailAddress;
+  message.value = savedFormData.message;
 };
 }
 // --------LOCAL STORAGE---------- // END
