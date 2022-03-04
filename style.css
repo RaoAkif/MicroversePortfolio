@@ -673,6 +673,7 @@ form {
   padding-left: 0;
   display: flex;
   justify-content: space-around;
+  margin: auto;
 }
 
 .links {
@@ -685,6 +686,9 @@ form {
   font-size: 17px;
   display: flex;
   align-content: center;
+  margin-right: 6px;
+  margin-left: 6px;
+  margin-bottom: 20px;
 }
 
 #live-link > a,
@@ -801,10 +805,10 @@ form {
 
   #links-project {
     width: 40%;
-    margin: auto;
     padding-left: 0;
     display: flex;
     justify-content: space-around;
+    margin: auto;
   }
 
   .links {
