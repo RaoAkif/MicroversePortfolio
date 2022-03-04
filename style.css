@@ -623,7 +623,7 @@ form {
 }
 
 #mobile-modal-title {
-  padding: 0px 16px;
+  padding: 0 16px;
   font-size: 32px;
   font-style: normal;
   font-weight: 600;
@@ -635,7 +635,7 @@ form {
 }
 
 #mobile-modal-tags {
-  padding: 0px 16px;
+  padding: 0 16px;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -644,7 +644,7 @@ form {
 
 #mobile-modal-tags > * {
   padding: 8px 12px;
-  margin: 0px 5px;
+  margin: 0 5px;
   background: lightgray;
   margin-left: 0;
   border-radius: 4px;
@@ -652,7 +652,7 @@ form {
 }
 
 #mobile-modal-description {
-  padding: 0px 16px;
+  padding: 0 16px;
   text-align: justify;
   line-height: 24px;
 }
@@ -675,15 +675,16 @@ form {
   align-content: center;
 }
 
-#live-link > a, #source-link > a {
+#live-link > a,
+#source-link > a {
   color: white;
 }
 
 .link-icons {
-    padding: 0;
-    padding-left: 10px;
-    width: 20px;
-    height: 20px;
+  padding: 0;
+  padding-left: 10px;
+  width: 20px;
+  height: 20px;
 }
 
 @media (min-width: 990px) {
@@ -694,11 +695,11 @@ form {
     width: 100vw;
     font-family: "Roboto", sans-serif;
   }
-  
+
   #modal-window.active {
     display: block;
   }
-  
+
   #modal {
     width: 342px;
     background-color: white;
@@ -706,7 +707,7 @@ form {
     box-sizing: border-box;
     border-radius: 16px;
   }
-  
+
   #mobile-modal {
     width: 342px;
     background-color: white;
@@ -714,7 +715,7 @@ form {
     box-sizing: border-box;
     border-radius: 16px;
   }
-  
+
   #mobile-modal-image {
     padding: 16px;
     width: 311px;
@@ -723,7 +724,7 @@ form {
     margin: auto;
     border-radius: 30px;
   }
-  
+
   #mobile-modal-close-icon {
     width: 15px;
     float: right;
@@ -732,9 +733,9 @@ form {
     top: 65px;
     color: white;
   }
-  
+
   #mobile-modal-title {
-    padding: 0px 16px;
+    padding: 0 16px;
     font-size: 32px;
     font-style: normal;
     font-weight: 600;
@@ -744,36 +745,36 @@ form {
     margin: 0;
     color: var(--color-primary);
   }
-  
+
   #mobile-modal-tags {
-    padding: 0px 16px;
+    padding: 0 16px;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
     margin: 0;
   }
-  
+
   #mobile-modal-tags > * {
     padding: 8px 12px;
-    margin: 0px 5px;
+    margin: 0 5px;
     background: lightgray;
     margin-left: 0;
     border-radius: 4px;
     margin-top: 8px;
   }
-  
+
   #mobile-modal-description {
-    padding: 0px 16px;
+    padding: 0 16px;
     text-align: justify;
     line-height: 24px;
   }
-  
+
   #links-project {
     padding-left: 0;
     display: flex;
     justify-content: space-around;
   }
-  
+
   .links {
     list-style: none;
     border-radius: 4px;
@@ -785,11 +786,12 @@ form {
     display: flex;
     align-content: center;
   }
-  
-  #live-link > a, #source-link > a {
+
+  #live-link > a,
+  #source-link > a {
     color: white;
   }
-  
+
   .link-icons {
       padding: 0;
       padding-left: 10px;

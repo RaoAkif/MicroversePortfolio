@@ -179,7 +179,7 @@ function closeModal() {
   }
 
 // ----------------- Popup window functionality ----------------------- END//
-=======
+
 // --------FORM VALIDATION----------
 
 const form = document.getElementById('form');
