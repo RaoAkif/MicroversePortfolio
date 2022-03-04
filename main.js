@@ -124,8 +124,8 @@ projects.forEach((project, index) => {
   Portfolios.innerHTML += `
       <div class='portfolio'>
           <img class='portfolio-image' src=${
-            project.image
-          } alt='portfolio_image_${index}' />
+          project.image
+        } alt='portfolio_image_${index}' />
           <div class='portfolio-desc'>
           <h2 class='project-title'>${project.title}</h2>
           <ul class='tags'>
@@ -136,8 +136,8 @@ projects.forEach((project, index) => {
           <li class='tag'>${project.tags.tag5}</li>
           </ul>
           <button type='button' id='see-project-${
-            index + 1
-          }' class='primary-button button-states see-project'>See Project</button>
+          index + 1
+        }' class='primary-button button-states see-project'>See Project</button>
           </div>
       </div>
       `;
@@ -151,7 +151,7 @@ for (let i = 0; i < projects.length; i += 1) {
     const MobileModal = `
       <div id='modal'>
         <img id='mobile-modal-image' src=${projects[i].image} alt=''>
-        <img id='mobile-modal-close-icon' src='./images/icons/mobile-modal-close.svg' alt='close icon' onclick='closeModal()' >
+        <img id='mobile-modal-close-icon' src='./images/icons/mobile-modal-close.svg' alt='close icon' ${closeModal} onclick='closeModal()' >
         <h2 id='mobile-modal-title'>${projects[i].title}</h2>
         <ul id='mobile-modal-tags'>
         <li class='tag'>${projects[i].tags.tag1}</li>
@@ -170,9 +170,7 @@ for (let i = 0; i < projects.length; i += 1) {
     window.scrollTo({ top: 0, behavior: 'smooth' });
     modalWindow.classList.toggle('active');
   });
-};
-
-const mobileModalCloseIcon = document.querySelector('#mobile-modal-close-icon');
+}
 
 function closeModal() {
   modalWindow.removeChild(document.getElementById('modal'));
@@ -204,5 +202,5 @@ form.addEventListener('submit', (event) => {
   } else {
     small.textContent = 'Please enter email address in small caps.';
     event.preventDefault();
-  };
+  }
 });
