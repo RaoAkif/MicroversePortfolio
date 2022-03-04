@@ -623,9 +623,9 @@ form {
 #mobile-modal-close-icon {
   width: 15px;
   float: right;
-  position: absolute;
-  right: 65px;
-  top: 65px;
+  position: relative;
+  right: 33px;
+  top: -216px;
   color: white;
 }
 
@@ -760,9 +760,9 @@ form {
     padding: 5px;
     width: 15px;
     float: right;
-    position: absolute;
-    right: 20%;
-    top: 6%;
+    position: relative;
+    right: 3%;
+    top: -65%;
     color: white;
   }
 
