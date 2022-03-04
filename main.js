@@ -54,17 +54,13 @@ function saveData(userData) {
   const message = document.getElementById('message').value;
   userData = {
     fullName,
-    email,
+    emailAddress,
     message,
   };
   localStorage.setItem('user', JSON.stringify(userData));
   let dataRecord = [];
   dataRecord = JSON.parse(localStorage.getItem('dataUser'));
-  dataRecord.push({
-    fullName,
-    email,
-    message,
-  });
+
   localStorage.setItem('dataUser', JSON.stringify(dataRecord));
 }
 
