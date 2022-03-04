@@ -21,9 +21,7 @@ closeIcon.addEventListener('click', () => {
 
 const form = document.getElementById('form');
 const small = document.getElementsByTagName('small')[0];
-const fullName = document.getElementById('name');
 const emailAddress = document.getElementById('email-address');
-const message = document.getElementById('message');
 
 function validateEmail(input) {
   const emailaddress = input.toString();
@@ -55,17 +53,17 @@ function saveData(userData) {
   const emailAddress = document.getElementById('email-address').value;
   const message = document.getElementById('message').value;
   userData = {
-    'full-name': fullName,
-    email: emailAddress,
-    message: message,
+    fullName,
+    email,
+    message,
   };
   localStorage.setItem('user', JSON.stringify(userData));
   let dataRecord = [];
   dataRecord = JSON.parse(localStorage.getItem('dataUser'));
   dataRecord.push({
-    fullName: fullName,
-    email: emailAddress,
-    message: message,
+    fullName,
+    email,
+    message,
   });
   localStorage.setItem('dataUser', JSON.stringify(dataRecord));
 }
