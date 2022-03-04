@@ -122,29 +122,33 @@ const Portfolios = document.querySelector('#portfolios');
 
 projects.forEach((project, index) => {
   Portfolios.innerHTML += `
-      <div class='portfolio'>
-          <img class='portfolio-image' src=${
-          project.image
-        } alt='portfolio_image_${index}' />
-          <div class='portfolio-desc'>
-          <h2 class='project-title'>${project.title}</h2>
-          <ul class='tags'>
-          <li class='tag'>${project.tags.tag1}</li>
-          <li class='tag'>${project.tags.tag2}</li>
-          <li class='tag'>${project.tags.tag3}</li>
-          <li class='tag'>${project.tags.tag4}</li>
-          <li class='tag'>${project.tags.tag5}</li>
-          </ul>
-          <button type='button' id='see-project-${
-          index + 1
-        }' class='primary-button button-states see-project'>See Project</button>
-          </div>
-      </div>
-      `;
+    <div class='portfolio'>
+      <img class='portfolio-image' src=${
+        project.image
+      } alt='portfolio_image_${index}' />
+      <div class='portfolio-desc'>
+      <h2 class='project-title'>${project.title}</h2>
+      <ul class='tags'>
+      <li class='tag'>${project.tags.tag1}</li>
+      <li class='tag'>${project.tags.tag2}</li>
+      <li class='tag'>${project.tags.tag3}</li>
+      <li class='tag'>${project.tags.tag4}</li>
+      <li class='tag'>${project.tags.tag5}</li>
+      </ul>
+      <button type='button' id='see-project-${
+        index + 1
+      }' class='primary-button button-states see-project'>See Project</button>
+    </div>
+</div>
+`;
 });
 
 const seeProject = document.querySelectorAll('.see-project');
 const modalWindow = document.querySelector('#modal-window');
+function closeModal() {
+  modalWindow.removeChild(document.getElementById('modal'));
+  modalWindow.classList.toggle('active');
+}
 
 for (let i = 0; i < projects.length; i += 1) {
   seeProject[i].addEventListener('click', () => {
@@ -170,11 +174,6 @@ for (let i = 0; i < projects.length; i += 1) {
     window.scrollTo({ top: 0, behavior: 'smooth' });
     modalWindow.classList.toggle('active');
   });
-}
-
-function closeModal() {
-  modalWindow.removeChild(document.getElementById('modal'));
-  modalWindow.classList.toggle('active');
 }
 
 // ----------------- Popup window functionality ----------------------- END//
