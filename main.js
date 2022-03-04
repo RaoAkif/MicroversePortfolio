@@ -25,16 +25,6 @@ const fullName = document.getElementById('name');
 const emailAddress = document.getElementById('email-address');
 const message = document.getElementById('message');
 
-let formData = {
-  name: '',
-  email: '',
-  message: '',
-};
-
-if (window.localStorage.getItem('formDatakeys') !== null) {
-  formData = JSON.parse(window.localStorage.getItem('formDatakeys'));
-}
-
 function validateEmail(input) {
   const emailaddress = input.toString();
   let isLower = false;
@@ -47,23 +37,45 @@ function validateEmail(input) {
 
 form.addEventListener('submit', (event) => {
   if (validateEmail(emailAddress.value)) {
+    event.preventDefault();
     small.textContent = '';
-    formData.name = fullName.value;
-    formData.email = email.value;
-    formData.message = message.value;
-    window.localStorage.setItem('formDatakeys', JSON.stringify(formData));
   } else {
     small.textContent = 'Please enter email address in small caps.';
     event.preventDefault();
   }
 });
 
-// fullName.value = formData.name;
-// emailAddress.value = formData.email;
-// message.value = formData.message;
-
 // --------FORM VALIDATION---------- // END
 
-//---------LOCAL STORAGE-----------// STAR
+// --------LOCAL STORAGE---------- // START
 
-// ---------LOCAL STORAGE-----------// END
+const userData = {};
+function saveData(userData) {
+  const fullName = document.getElementById('name').value;
+  const emailAddress = document.getElementById('email-address').value;
+  const message = document.getElementById('message').value;
+  userData = {
+    'full-name': fullName,
+    email: emailAddress,
+    message: message,
+  };
+  localStorage.setItem('user', JSON.stringify(userData));
+  let dataRecord = [];
+  dataRecord = JSON.parse(localStorage.getItem('dataUser'));
+  dataRecord.push({
+    fullName: fullName,
+    email: emailAddress,
+    message: message,
+  });
+  localStorage.setItem('dataUser', JSON.stringify(dataRecord));
+}
+
+form.addEventListener('change', () => {
+  saveData(userData);
+});
+
+window.addEventListener('load', () => {
+  JSON.parse(localStorage.user);
+});
+
+// --------LOCAL STORAGE---------- // END
