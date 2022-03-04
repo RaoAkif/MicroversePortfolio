@@ -17,48 +17,53 @@ closeIcon.addEventListener('click', () => {
   mobilePopupNav.classList.toggle('active');
 });
 
-// --------FORM VALIDATION----------
+// --------FORM VALIDATION---------- // START
 
 const form = document.getElementById('form');
 const small = document.getElementsByTagName('small')[0];
-const email = document.getElementById('email-address');
+const fullName = document.getElementById('name');
+const emailAddress = document.getElementById('email-address');
+const message = document.getElementById('message');
+
+let formData = {
+  name: '',
+  email: '',
+  message: '',
+};
+
+if (window.localStorage.getItem('formDatakeys') !== null) {
+  formData = JSON.parse(window.localStorage.getItem('formDatakeys'));
+}
 
 function validateEmail(input) {
-  const address = input.toString();
+  const emailaddress = input.toString();
   let isLower = false;
 
-  if (address === address.toLowerCase()) {
+  if (emailaddress === emailaddress.toLowerCase() && emailaddress !== '') {
     isLower = true;
   }
-
   return isLower;
 }
 
-// ---------LOCAL STORAGE-----------// START
-
-const formData = {
-  name: form.elements.name.value,
-  email: form.elements.email.value,
-  description: form.elements.description.value,
-};
-
 form.addEventListener('submit', (event) => {
-  if (validateEmail(email.value)) {
+  if (validateEmail(emailAddress.value)) {
     small.textContent = '';
+    formData.name = fullName.value;
+    formData.email = email.value;
+    formData.message = message.value;
+    window.localStorage.setItem('formDatakeys', JSON.stringify(formData));
   } else {
     small.textContent = 'Please enter email address in small caps.';
     event.preventDefault();
   }
-  localStorage.setItem('formData', JSON.stringify(formData));
 });
 
-const displayData = () => {
-  const { name, email, description } = JSON.parse(localStorage.getItem('formData'));
-  form.elements.name.value = name;
-  form.elements.email.value = email;
-  form.elements.description.value = description;
-};
+// fullName.value = formData.name;
+// emailAddress.value = formData.email;
+// message.value = formData.message;
 
-displayData();
+// --------FORM VALIDATION---------- // END
+
+//---------LOCAL STORAGE-----------// STAR
 
 // ---------LOCAL STORAGE-----------// END
