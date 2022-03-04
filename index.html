@@ -12,10 +12,12 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-2TBWY4L6YS"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-      gtag('config', 'G-2TBWY4L6YS');
+      gtag("config", "G-2TBWY4L6YS");
     </script>
     <link rel="stylesheet" href="./style.css" />
     <title>Rao Akif - Portfolio</title>
@@ -27,11 +29,19 @@
       <header>
         <nav class="navbar-list">
           <a href="./index.html" id="logo">RaoAkif</a>
-          <img class="hamburger" src="./images/icons/hamburger.svg" alt="menu" />
+          <img
+            class="hamburger"
+            src="./images/icons/hamburger.svg"
+            alt="menu"
+          />
         </nav>
         <div id="mobile-popup">
-          <img id="close-icon" src="./images/icons/close.svg" alt="close-icon">
-          
+          <img
+            id="close-icon"
+            src="./images/icons/close.svg"
+            alt="close-icon"
+          />
+
           <ul id="nav-bar" class="navbar-list-mobile">
             <li><a href="#portfolio-section">Portfolio</a></li>
             <li><a href="#about-section">About</a></li>
@@ -168,7 +178,7 @@
           I'm always interested in hearing about new projects, so if you'd like
           to chat please get in touch.
         </h2>
-        <form action="https://formspree.io/f/mrgjqpap" method="POST">
+        <form id="form" action="https://formspree.io/f/mrgjqpap" method="POST">
           <label hidden>Name</label>
           <input
             class="form-fields"
@@ -188,6 +198,7 @@
             placeholder="Email Address"
             required
           />
+          <small id="email-invalidation-message"></small>
           <label hidden>Subject</label>
           <textarea
             class="form-fields"

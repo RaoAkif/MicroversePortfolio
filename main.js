@@ -179,3 +179,29 @@ function closeModal() {
   }
 
 // ----------------- Popup window functionality ----------------------- END//
+=======
+// --------FORM VALIDATION----------
+
+const form = document.getElementById('form');
+const small = document.getElementsByTagName('small')[0];
+const emailAddress = document.getElementById('email-address');
+
+function validateEmail(input) {
+  const address = input.toString();
+  let isLower = false;
+
+  if (address === address.toLowerCase()) {
+    isLower = true;
+  }
+
+  return isLower;
+}
+
+form.addEventListener('submit', (event) => {
+  if (validateEmail(emailAddress.value)) {
+    small.textContent = '';
+  } else {
+    small.textContent = 'Please enter email address in small caps.';
+    event.preventDefault();
+  }
+});
