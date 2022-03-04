@@ -288,8 +288,6 @@ a {
   color: var(--color-tertiary);
   font-size: 24px;
   text-align: center;
-  margin-top: 20px;
-  margin-bottom: 15px;
   margin: 20px 16px 15px 16px;
 }
 
@@ -704,22 +702,22 @@ form {
     width: 100vw;
     font-family: "Roboto", sans-serif;
   }
-  
+
   #modal-window.active {
     display: block;
   }
-  
+
   #modal {
     background-color: white;
     border: 1px solid #dfe1e6;
     height: 1083px;
     width: 920px;
-    left: 0px;
-    top: 0px;
+    left: 0;
+    top: 0;
     border-radius: 8px;
     margin: auto;
   }
-  
+
   #mobile-modal {
     width: 342px;
     background-color: white;
@@ -727,7 +725,7 @@ form {
     box-sizing: border-box;
     border-radius: 16px;
   }
-  
+
   #mobile-modal-image {
     padding: 24px;
     display: flex;
@@ -737,7 +735,7 @@ form {
     width: 872px;
     border-radius: 30px;
   }
-  
+
   #mobile-modal-close-icon {
     background-color: lightgrey;
     padding: 5px;
@@ -748,9 +746,9 @@ form {
     top: 6%;
     color: white;
   }
-  
+
   #mobile-modal-title {
-    padding: 0px 24px;
+    padding: 0 24px;
     font-size: 32px;
     font-style: normal;
     font-weight: 600;
@@ -760,7 +758,7 @@ form {
     margin: 0;
     color: var(--color-primary);
   }
-  
+
   #mobile-modal-tags {
     padding: 12px 24px;
     list-style: none;
@@ -768,22 +766,22 @@ form {
     flex-wrap: wrap;
     margin: 0;
   }
-  
+
   #mobile-modal-tags > * {
     padding: 8px 12px;
-    margin: 0px 5px;
+    margin: 0 5px;
     background: lightgray;
     margin-left: 0;
     border-radius: 4px;
     margin-top: 8px;
   }
-  
+
   #mobile-modal-description {
-    padding: 0px 24px;
+    padding: 0 24px;
     text-align: justify;
     line-height: 30px;
   }
-  
+
   #links-project {
     width: 40%;
     margin: auto;
@@ -791,7 +789,7 @@ form {
     display: flex;
     justify-content: space-around;
   }
-  
+
   .links {
     list-style: none;
     border-radius: 4px;
@@ -803,16 +801,17 @@ form {
     display: flex;
     align-content: center;
   }
-  
-  #live-link > a, #source-link > a {
+
+  #live-link > a,
+  #source-link > a {
     color: white;
   }
-  
+
   .link-icons {
-      padding: 0;
-      padding-left: 10px;
-      width: 20px;
-      height: 20px;
+    padding: 0;
+    padding-left: 10px;
+    width: 20px;
+    height: 20px;
   }
 }
 
