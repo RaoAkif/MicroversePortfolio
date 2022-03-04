@@ -21,7 +21,9 @@ closeIcon.addEventListener('click', () => {
 
 const form = document.getElementById('form');
 const small = document.getElementsByTagName('small')[0];
+const fullName = document.getElementById('name');
 const emailAddress = document.getElementById('email-address');
+const message = document.getElementById('message');
 
 function validateEmail(input) {
   const emailaddress = input.toString();
@@ -68,8 +70,15 @@ form.addEventListener('change', () => {
   saveData(userData);
 });
 
-window.addEventListener('load', () => {
-  JSON.parse(localStorage.user);
-});
-
+window.onload = () => {
+  let savedFormData = localStorage.getItem('user');
+  savedFormData = JSON.parse(savedFormData);
+  // Check if the form data object is found on localStorage
+  if (savedFormData) {
+  // populate inputs values if data was found
+  fullName.value = savedFormData.fullName
+  emailAddress.value = savedFormData.emailAddress
+  message.value = savedFormData.message
+};
+}
 // --------LOCAL STORAGE---------- // END
