@@ -1,5 +1,3 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
-
 # Rao Akif's Portfolio
 
 > This is my official Portfolio. It contains my Bio, my Technology Stack, and the Recent Project.
