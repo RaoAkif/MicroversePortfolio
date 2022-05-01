@@ -15,9 +15,9 @@
 
 ## 👤 Author
 
-- GitHub: [@githubhandle](https://github.com/raoakif)
-- Twitter: [@twitterhandle](https://twitter.com/raoakif)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/raoakif)
+- GitHub: [@RaoAkif](https://github.com/raoakif)
+- Twitter: [@RaoAkif](https://twitter.com/raoakif)
+- LinkedIn: [RaoAkif](https://linkedin.com/in/raoakif)
 
 ## 🤝 Contributing
 
