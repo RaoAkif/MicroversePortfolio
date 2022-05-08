@@ -3,6 +3,8 @@
 > This is my official Portfolio. It contains my Bio, my Technology Stack, and the Recent Project.
 > A Portfolio Website that maps the projects Data, its Screeshots and other stuff on to the DOM with the help of JavaScript Selectors. The Project section and Technologies can just updated just by updating the object variable file. 
 
+![Portfolio](https://user-images.githubusercontent.com/61361037/167278190-db2c85d6-e4ff-4fb4-a78e-8fcd4fe7536e.PNG)
+
 
 ## Built With
 
