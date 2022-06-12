@@ -1,7 +1,7 @@
 # Rao Akif's Portfolio
 
 > This is my official Portfolio. It contains my Bio, Technology Stack, and the Recent Projects.
-> A Portfolio Website that maps the projects Data, its Screeshots and other stuff on to the DOM with the help of JavaScript Selectors. The Project section and Technologies can just updated just by updating the object variable file. 
+> A Portfolio Website that maps the projects Data, its Screeshots and other stuff on to the DOM with the help of JavaScript Selectors. The Project section and Technologies can be updated just by updating the object variable file. 
 
 ![Portfolio](https://user-images.githubusercontent.com/61361037/167278658-94855b98-669f-4097-b008-b4fc08dfdcfd.PNG)
 
