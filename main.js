@@ -23,7 +23,7 @@ const projects = [
   {
     title: 'Project 1: Keeping track of hundreds of components',
     image:
-      'https://raw.githubusercontent.com/RaoAkif/Portfolio/main/images/portfolio_modal/Portfolio_Projects%20-%20Mobile%20Modal_1.png',
+      'https://raw.githubusercontent.com/RaoAkif/Portfolio/42842e1d849c517bbb3a2f8227bbf218f53253e2/images/portfolio_modal/Portfolio_Projects%20-%20Mobile%20Modal_1.png',
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the release.",
     tags: {
